@@ -1,0 +1,2068 @@
+/* line 17, ../../../../../../opt/vagrant_ruby/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+}
+#wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
+#pano-wrapper {
+  bottom: 0px;
+  left: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+.jwplayer-placeholder {
+  display: none;
+}
+#menu-wrap .menu-item {
+  background: black;
+  color: white;
+}
+#menu-wrap .menu-item.hover {
+  background: black;
+  color: white;
+}
+#menu-wrap .menu-item.active {
+  background: black;
+  color: white;
+}
+#menu-wrap .menu-item.selected {
+  background: black;
+  color: white;
+}
+#next-arrow, #previous-arrow, #next-slide, #prev-slide {
+  cursor: pointer;
+  position: absolute;
+}
+.slide-container-outer-border {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 125px;
+}
+.slide-container-inner-border {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.slide-outer-border,
+.slide-inner-border {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+.section-pano .slide-inner-border {
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+}
+
+/* line 113, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.section-pano .slide-outer-border {
+  left: 40px;
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid #666;
+}
+
+/* line 121, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.video-container {
+  width: 700px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -355px;
+  margin-top: -205px;
+  border: 10px solid #888888;
+  box-shadow: 1px 1px 5px #000;
+  background: #202020;
+}
+/* line 132, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* line 137, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.video-container .jwplayer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 144, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.video-container .divider {
+  margin: 0;
+}
+
+/* line 148, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+/* line 155, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.slide .match-image {
+  position: absolute;
+}
+/* line 159, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.slide .fit-container-border {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+/* line 167, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.slide .fit-container {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+  overflow: hidden;
+}
+/* line 174, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.slide .fit-container > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 180, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.slide .overlay {
+  background: none;
+  bottom: 0px;
+  display: block;
+}
+/* line 185, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.slide img.slide-image {
+  width: 100%;
+}
+
+/* line 190, ../../../../src/Spodig/DigideckBundle/Resources/compass/_main.scss */
+.fullbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -ms-behavior: url("http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/polyfill/backgroundsize.htc");
+}
+
+/* line 2, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.color1 {
+  background: #073056;
+}
+
+/* line 5, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.color2 {
+  background: #073056;
+}
+
+/* line 8, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.color3 {
+  background: #073056;
+}
+
+/* line 11, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.color4 {
+  background: #073056;
+}
+
+/* line 14, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.color5 {
+  background: #073056;
+}
+
+/* line 17, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.color6 {
+  background: #073056;
+}
+
+/* line 24, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.category-title-color1, .category-title-color2, .category-title-color3,
+.category-title-color4, .category-title-color5, .category-title-color6 {
+  color: #fff;
+  font-size: 20px;
+  margin: 32px auto 0;
+  padding: 0px 10px 15px 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+  width: 80%;
+  max-height: 25px;
+  text-overflow: ellipsis;
+  line-height: 2;
+  overflow: hidden;
+}
+
+/* line 40, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.category-title-color1 {
+  background: #073056;
+}
+
+/* line 43, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.category-title-color2 {
+  background: #073056;
+}
+
+/* line 46, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.category-title-color3 {
+  background: #073056;
+}
+
+/* line 49, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.category-title-color4 {
+  background: #073056;
+}
+
+/* line 52, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.category-title-color5 {
+  background: #073056;
+}
+
+/* line 55, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.category-title-color6 {
+  background: #073056;
+}
+
+/* line 58, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+.category-overlay {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  transition: all 0.2s ease-in-out 0.2s;
+  -moz-transition: all 0.2s ease-in-out 0.2s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.2s ease-in-out 0.2s;
+  /* Safari and Chrome */
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+/* line 69, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-wrap {
+  background: #999999;
+  bottom: 0px;
+  height: 125px;
+  max-height: 200px;
+  min-height: 125px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  box-shadow: -2px 0px 5px #000;
+}
+
+/* line 82, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#next-arrow {
+  right: 20px;
+  top: 55px;
+  background-position: -15px 0;
+}
+
+/* line 88, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#previous-arrow {
+  left: 20px;
+  top: 55px;
+  background-position: 0px 0;
+}
+
+/* line 93, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#section-menu-btn {
+  cursor: pointer;
+  height: 90px;
+  left: 52px;
+  position: absolute;
+  top: 32px;
+  width: 134px;
+  z-index: 103;
+  overflow: hidden;
+}
+
+/* line 103, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock {
+  height: 121px;
+  left: 200px;
+  overflow: hidden;
+  position: absolute;
+  right: 60px;
+  /* end of menu-dock-list */
+}
+/* line 109, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock #menu-dock-list {
+  height: 120px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 115, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock #menu-dock-list ul {
+  float: left;
+  height: 119px;
+  margin: 0 0 0 10px;
+  position: relative;
+}
+/* line 120, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock #menu-dock-list ul li {
+  cursor: pointer;
+  float: left;
+  height: 105px;
+  margin: 10px 5px 10px 5px;
+  width: 86px;
+}
+/* line 126, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock #menu-dock-list ul li img {
+  margin: 4px;
+  width: 78px;
+  height: 50px;
+}
+/* line 131, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock #menu-dock-list ul li p {
+  font-size: 14px;
+  max-height: 48px;
+  line-height: .9;
+  letter-spacing: 2;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  /* text-shadow: 1px 1px 2px #000000; */
+  text-transform: uppercase;
+  width: 78px;
+}
+/* line 147, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock #menu-dock-list ul .single {
+  margin-top: 10px;
+}
+/* line 151, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock #menu-dock-list ul .double {
+  margin-top: 6px;
+}
+/* line 155, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock #menu-dock-list ul .triple {
+  margin-top: 1px;
+}
+/* line 158, ../../../../src/Spodig/DigideckBundle/Resources/compass/_horizontal_menu.scss */
+#menu-dock #menu-dock-list ul .quad {
+  margin-top: -2px;
+}
+
+/* end of menu-dock */
+/* line 3, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.slide.has-proposal .left-column .center-vertical, .slide.has-proposal .left-column .left-column-contents, .slide.has-proposal .right-column .center-vertical, .slide.has-proposal .right-column .left-column-contents {
+  padding-top: 42px;
+}
+
+/* line 9, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column {
+  left: 0px;
+}
+
+/* line 13, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.right-column {
+  right: 0px;
+}
+
+/* line 17, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column, .right-column, .proposal {
+  bottom: 0px;
+  top: 0px;
+  position: absolute;
+  line-height: 1.2em;
+  font-size: 22px;
+  width: 400px;
+  overflow: auto;
+  z-index: 2;
+}
+/* line 28, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column .center-vertical, .left-column .proposal-content, .left-column .left-column-contents, .right-column .center-vertical, .right-column .proposal-content, .right-column .left-column-contents, .proposal .center-vertical, .proposal .proposal-content, .proposal .left-column-contents {
+  position: absolute;
+  height: auto;
+  width: 90%;
+  padding: 0px;
+  top: 0px;
+  left: 5%;
+}
+/* line 36, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column ul li, .right-column ul li, .proposal ul li {
+  list-style: disc;
+}
+/* line 39, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column ol li, .right-column ol li, .proposal ol li {
+  list-style: decimal;
+}
+/* line 42, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column ul, .left-column ol, .right-column ul, .right-column ol, .proposal ul, .proposal ol {
+  margin-top: 25px;
+  text-decoration: none;
+}
+/* line 45, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column ul li, .left-column ol li, .right-column ul li, .right-column ol li, .proposal ul li, .proposal ol li {
+  margin: 15px 0 -2px 20px;
+  line-height: 1.1;
+}
+/* line 49, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column ul p, .left-column ol p, .right-column ul p, .right-column ol p, .proposal ul p, .proposal ol p {
+  position: relative;
+  margin: 10px 0 0 0;
+  line-height: 1.1;
+}
+/* line 54, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column ul p img, .left-column ol p img, .right-column ul p img, .right-column ol p img, .proposal ul p img, .proposal ol p img {
+  margin: 0 3px -3px 0;
+}
+/* line 61, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column .highlight, .right-column .highlight, .proposal .highlight {
+  font-size: 22px;
+}
+/* line 65, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column .fit-image, .right-column .fit-image, .proposal .fit-image {
+  display: none;
+}
+/* line 69, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column h3, .left-column .header, .right-column h3, .right-column .header, .proposal h3, .proposal .header {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 73, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column .subheader, .right-column .subheader, .proposal .subheader {
+  text-align: center;
+}
+/* line 76, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column h4, .right-column h4, .proposal h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  margin-left: 22px;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-align: left;
+}
+/* line 86, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column p, .right-column p, .proposal p {
+  position: relative;
+  margin: 20px 10px 0 10px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+/* line 93, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column ul, .left-column ol, .right-column ul, .right-column ol, .proposal ul, .proposal ol {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+/* line 97, ../../../../src/Spodig/DigideckBundle/Resources/compass/_template_column.scss */
+.left-column ul li, .left-column ol li, .right-column ul li, .right-column ol li, .proposal ul li, .proposal ol li {
+  margin-left: 10px;
+  font-size: 22px;
+  line-height: 1em;
+}
+
+/* line 1, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.slide.zoom {
+  height: 0px;
+  overflow: visible;
+  bottom: auto;
+}
+
+/* line 7, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown-header {
+  position: absolute;
+  left: 10px;
+  width: 580px;
+  top: 0px;
+  color: #FFFFFF;
+  height: 36px;
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+  border-color: #555555;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  font-size: 30px;
+  padding: 14px 20px 10px 20px;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+/* line 26, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown-header .popdown-button {
+  position: relative;
+  display: block;
+  background: center top no-repeat url(http://nascar.thedigideck.com/images/pano-info.png);
+  overflow: hidden;
+  float: right;
+  width: 150px;
+  height: 34px;
+  cursor: pointer;
+  z-index: 9000;
+}
+
+/* line 38, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown-header .popdown-proposal-button {
+  position: relative;
+  display: block;
+  background: center top no-repeat url(http://nascar.thedigideck.com/images/proposal-info.png);
+  overflow: hidden;
+  float: right;
+  width: 150px;
+  height: 34px;
+  cursor: pointer;
+  z-index: 9000;
+}
+
+/* line 50, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown-header .popdown-logo {
+  position: absolute;
+  max-width: 65px;
+  max-height: 45px;
+  top: 8px;
+  right: 175px;
+}
+
+/* line 58, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown-header.popped div {
+  background-position: bottom;
+}
+
+/* line 62, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown-title {
+  position: relative;
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+/* line 68, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown {
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  left: 10px;
+  top: 60px;
+  width: 500px;
+  padding: 10px 20px 20px 20px;
+  background: #141E50;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+  border-color: #555555;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  z-index: 10;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #FFFFFF;
+  text-align: left;
+  line-height: 1.2;
+}
+/* line 88, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown .title {
+  display: none;
+}
+/* line 92, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* line 96, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown .header, .popdown h3 {
+  font-size: 68px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 101, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown .header span, .popdown h3 span {
+  margin-bottom: -10px;
+  display: block;
+  font-size: 42px;
+}
+/* line 107, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown .divider {
+  position: relative;
+  background: #FFF;
+  width: 100%;
+  height: 5px;
+  margin: 25px auto 30px;
+  box-shadow: 1px 1px 1px #999;
+}
+/* line 115, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown .divider.last {
+  margin-bottom: 60px;
+}
+/* line 118, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown .subheader {
+  text-align: left;
+}
+/* line 121, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown .highlight {
+  left: 0px;
+  margin-top: 19px;
+  margin-bottom: 10px;
+  margin-left: 21px;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-align: left;
+}
+/* line 133, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popdown ul li {
+  font-size: 20px;
+  list-style: disc;
+}
+
+/* line 140, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popup-screen, .popup-image-screen, .popup-text-screen {
+  z-index: 1000;
+  display: none;
+  background: #000;
+  opacity: .6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 150, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popup-video-container {
+  position: absolute;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  width: 800px;
+  height: 490px;
+  left: 50%;
+  margin-top: -275px;
+  margin-left: -410px;
+  padding: 10px;
+  z-index: 9000;
+  top: 50%;
+}
+/* line 163, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popup-video-container > div {
+  box-shadow: 0 0 10px #000;
+}
+/* line 167, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.popup-video-container div.close-video {
+  box-shadow: none;
+  position: absolute;
+  background: center top no-repeat url(http://nascar.thedigideck.com/images/close-video.png);
+  top: -27px;
+  left: 20px;
+  font-size: 26px;
+  width: 143px;
+  height: 27px;
+  margin: 0 auto 0;
+  cursor: pointer;
+}
+
+/* line 181, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.pano-video-info {
+  display: none;
+}
+
+/* line 184, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.toggle-video {
+  background: url(http://nascar.thedigideck.com/images/play-video.png);
+  position: relative;
+  width: 143px;
+  height: 48px;
+  margin: 15px auto 0;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* line 195, ../../../../src/Spodig/DigideckBundle/Resources/compass/_pano_slide.scss */
+.pano-close-slide {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-size: 13px;
+  cursor: pointer;
+  z-index: 500;
+  background: #FFFFFF;
+  color: #004c9e;
+  border-radius: 0px 5px 0px 0px;
+  padding: 4px;
+  display: block;
+}
+
+@font-face {
+  font-family: "MachineBT";
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/machine_bt-webfont.eot');
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/machine_bt-webfont.eot?#iefix') format('eot'), url('/organizations/nascar/fonts/machine_bt-webfont.woff') format('woff'), url('/organizations/nascar/fonts/machine_bt-webfont.ttf') format('truetype');
+  font-weight: "normal";
+}
+
+@font-face {
+  font-family: "RalewayBold";
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-Bold.eot');
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-Bold.eot?#iefix') format('eot'), url('/organizations/nascar/fonts/Raleway-Bold.woff') format('woff'), url('/organizations/nascar/fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: "normal";
+  font-style: "bold";
+}
+
+@font-face {
+  font-family: "RalewayLight";
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-Light.eot');
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-Light.eot?#iefix') format('eot'), url('/organizations/nascar/fonts/Raleway-Light.woff') format('woff'), url('/organizations/nascar/fonts/Raleway-Light.ttf') format('truetype');
+  font-weight: "light";
+  font-style: "normal";
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-Regular.eot');
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-Regular.eot?#iefix') format('eot'), url('/organizations/nascar/fonts/Raleway-Regular.woff') format('woff'), url('/organizations/nascar/fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: "light";
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "RalewaySemiBold";
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-SemiBold.eot');
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-SemiBold.eot?#iefix') format('eot'), url('/organizations/nascar/fonts/Raleway-SemiBold.woff') format('woff'), url('/organizations/nascar/fonts/Raleway-SemiBold.ttf') format('truetype');
+  font-weight: "normal";
+  font-style: "italic";
+}
+
+@font-face {
+  font-family: "RalewayExtraLight";
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-ExtraLight.eot');
+  src: url('http://nascar.thedigideck.com/organizations/nascar/fonts/Raleway-ExtraLight.eot?#iefix') format('eot'), url('/organizations/nascar/fonts/Raleway-ExtraLight.woff') format('woff'), url('/organizations/nascar/fonts/Raleway-ExtraLight.ttf') format('truetype');
+  font-weight: "bold";
+  font-style: "italic";
+}
+
+/* line 48, ../scss/main.sass */
+body {
+  font-family: RalewayLight, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+/* line 52, ../scss/main.sass */
+strong {
+  font-family: MachineBT;
+  font-style: italic;
+}
+
+/* line 55, ../scss/main.sass */
+em {
+  font-family: RalewayLight;
+}
+
+/* line 58, ../scss/main.sass */
+sup {
+  vertical-align: super;
+  font-size: 80%;
+}
+
+/* line 62, ../scss/main.sass */
+.static-hotspot {
+  display: block;
+  position: absolute;
+}
+
+/* line 67, ../scss/main.sass */
+html #menu-container .menu-name {
+  font-family: RalewayLight;
+  text-align: left;
+  font-size: 26pt;
+  text-shadow: 4px 4px 3px black;
+  font-weight: bold;
+  position: absolute;
+  height: 110px;
+  width: 100%;
+  bottom: -120px;
+  left: 10px;
+}
+/* line 78, ../scss/main.sass */
+html #menu-container .logo-secondary-custom {
+  height: 110px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  bottom: -120px;
+}
+/* line 84, ../scss/main.sass */
+html audio {
+  display: block;
+  width: 100%;
+}
+/* line 87, ../scss/main.sass */
+html .popup-video-container {
+  width: 854px;
+  height: 480px;
+}
+/* line 90, ../scss/main.sass */
+html .head-on {
+  right: 0;
+  left: auto;
+}
+/* line 93, ../scss/main.sass */
+html ul li ul li {
+  list-style: circle outside;
+}
+/* line 95, ../scss/main.sass */
+html .popdown ul {
+  margin-left: 15px;
+}
+/* line 97, ../scss/main.sass */
+html .popdown hr {
+  display: none;
+}
+/* line 100, ../scss/main.sass */
+html #menu-wrap {
+  behavior: url("http://nascar.thedigideck.com/organizations/mavericks/css/PIE.htc");
+  z-index: 0;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #9b9b9b), color-stop(50%, #fdfdfd), color-stop(100%, #9b9b9b));
+  background: -webkit-linear-gradient(left, #9b9b9b, #fdfdfd 50%, #9b9b9b);
+  background: -moz-linear-gradient(left, #9b9b9b, #fdfdfd 50%, #9b9b9b);
+  background: -o-linear-gradient(left, #9b9b9b, #fdfdfd 50%, #9b9b9b);
+  -pie-background: linear-gradient(left, #9b9b9b, #fdfdfd 50%, #9b9b9b);
+  background: linear-gradient(left, #9b9b9b, #fdfdfd 50%, #9b9b9b);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 107, ../scss/main.sass */
+html #menu-wrap .category-overlay {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 110, ../scss/main.sass */
+html #menu-wrap .category-title-color1, html #menu-wrap .category-title-color4, html #menu-wrap .category-title-color2, html #menu-wrap .category-title-color5, html #menu-wrap .category-title-color3, html #menu-wrap .category-title-color6 {
+  -webkit-box-shadow: 0px 0px 3px 1px black;
+  -moz-box-shadow: 0px 0px 3px 1px black;
+  box-shadow: 0px 0px 3px 1px black;
+  font-weight: bold;
+}
+/* line 114, ../scss/main.sass */
+html .section-default .slide-container-inner-border, html .section-pano .slide-inner-border {
+  background: url("http://nascar.thedigideck.com/images/slide-bg.png") #9c9fa1;
+}
+/* line 117, ../scss/main.sass */
+html .section-pano .slide-outer-border {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 119, ../scss/main.sass */
+html .section-pano .slide-inner-border {
+  box-shadow: 0 0 10px black;
+}
+/* line 122, ../scss/main.sass */
+html .slide {
+  background: url("http://nascar.thedigideck.com/images/slide-bg.png");
+}
+/* line 126, ../scss/main.sass */
+html .slide .content-area-pano {
+  left: 25%;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 3;
+  position: absolute;
+}
+/* line 134, ../scss/main.sass */
+html .slide .fit-container-border {
+  left: 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5) inset;
+}
+/* line 139, ../scss/main.sass */
+html .slide .fit-container-border .fit-container {
+  overflow: visible;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+}
+/* line 146, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .fitbg {
+  z-index: 5;
+}
+/* line 149, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .match-image {
+  z-index: 5;
+}
+/* line 152, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .proposal-slide-logo-contain {
+  width: 100%;
+  margin: 10px auto 0px auto;
+  position: absolute;
+  z-index: 10000;
+}
+/* line 158, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .proposal-slide-html {
+  position: absolute;
+  top: 160px;
+  left: 20px;
+  right: 20px;
+  bottom: 0px;
+  padding: 40px 60px 40px 60px;
+  margin: 0 auto 0;
+  color: white;
+  border-top: 1px solid white;
+  overflow: auto;
+  text-align: left;
+}
+/* line 171, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .proposal-slide-html ul li {
+  font-size: 20px;
+  list-style: circle outside;
+  margin-bottom: 0.5em;
+}
+/* line 176, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .proposal-slide-html ol li {
+  font-size: 20px;
+  list-style: decimal outside;
+  margin-bottom: 0.5em;
+}
+/* line 181, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .proposal-slide-html h4 {
+  margin-left: 30px;
+  font-family: RalewayBold;
+  font-style: normal;
+  font-size: 28px;
+}
+/* line 187, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .proposal-slide-html h3, html .slide .fit-container-border .fit-container .proposal-slide-html .header {
+  line-height: 1.1em;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 40px;
+  border-bottom: 2px solid #20558a;
+  border-top: 2px solid #20558a;
+  margin-bottom: 15px;
+}
+/* line 196, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .proposal-slide-html h3 strong, html .slide .fit-container-border .fit-container .proposal-slide-html .header strong {
+  font-size: 46px;
+}
+/* line 199, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .proposal-slide-html p {
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+/* line 203, ../scss/main.sass */
+html .slide .fit-container-border .fit-container .proposal-slide-html p small {
+  font-size: 13px;
+}
+/* line 206, ../scss/main.sass */
+html .slide .fit-container-border .fit-container > img {
+  z-index: 1;
+  -webkit-box-shadow: 15px 15px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 15px 15px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 15px 15px 30px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 211, ../scss/main.sass */
+html #investment-background {
+  background: url("http://nascar.thedigideck.com/background-images/investmentsummary-content.jpg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+/* line 223, ../scss/main.sass */
+html #investment-summary #investment-summary-left {
+  background: url("http://nascar.thedigideck.com/background-images/investmentsummary.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+}
+/* line 228, ../scss/main.sass */
+html #investment-summary #investment-summary-left p {
+  text-align: center;
+}
+/* line 231, ../scss/main.sass */
+html #investment-summary #investment-summary-content {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  right: 0;
+  text-align: left;
+  margin-left: 65px;
+  padding-top: 40px;
+}
+/* line 240, ../scss/main.sass */
+html #investment-summary #investment-summary-content h3 {
+  line-height: 1.2em;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  font-size: 38px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+/* line 248, ../scss/main.sass */
+html #investment-summary #investment-summary-content h3 strong {
+  font-size: 38px;
+  color: #fece28;
+}
+/* line 252, ../scss/main.sass */
+html #investment-summary #investment-summary-content ol, html #investment-summary #investment-summary-content ul {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+/* line 259, ../scss/main.sass */
+html #investment-summary #investment-summary-content ul li {
+  list-style: disc;
+  padding-bottom: 5px;
+}
+/* line 262, ../scss/main.sass */
+html #investment-summary #investment-summary-content ol li {
+  list-style: decimal;
+  padding-bottom: 5px;
+}
+/* line 267, ../scss/main.sass */
+html #investment-summary #investment-summary-content h4 {
+  margin-left: 0px;
+  font-family: RalewaySemiBold;
+  font-style: normal;
+  font-size: 20px;
+}
+/* line 273, ../scss/main.sass */
+html #investment-summary #investment-summary-content p small {
+  font-size: 13px;
+}
+/* line 275, ../scss/main.sass */
+html #investment-summary #investment-summary-content p {
+  text-align: left;
+  font-family: "RalewaySemiBold";
+  font-size: 20px;
+}
+/* line 280, ../scss/main.sass */
+html #investment-summary #investment-summary-content em {
+  font-size: 15px;
+}
+/* line 283, ../scss/main.sass */
+html #investment-summary #investment-summary-content a {
+  color: white;
+}
+/* line 287, ../scss/main.sass */
+html .left-column, html .right-column, html .proposal {
+  z-index: 4;
+  box-shadow: 0 0 10px black;
+  background: #393939;
+  behavior: url("http://nascar.thedigideck.com/organizations/mavericks/css/PIE.htc");
+  z-index: 0;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #111111), color-stop(32%, #393939), color-stop(42%, #434343), color-stop(50%, #474747), color-stop(66%, #393939), color-stop(100%, #111111));
+  background: -webkit-linear-gradient(left, #111111 0%, #393939 32%, #434343 42%, #474747 50%, #393939 66%, #111111 100%);
+  background: -moz-linear-gradient(left, #111111 0%, #393939 32%, #434343 42%, #474747 50%, #393939 66%, #111111 100%);
+  background: -o-linear-gradient(left, #111111 0%, #393939 32%, #434343 42%, #474747 50%, #393939 66%, #111111 100%);
+  -pie-background: linear-gradient(left, #111111 0%, #393939 32%, #434343 42%, #474747 50%, #393939 66%, #111111 100%);
+  background: linear-gradient(left, #111111 0%, #393939 32%, #434343 42%, #474747 50%, #393939 66%, #111111 100%);
+  width: 30%;
+  max-width: 600px;
+  color: white;
+  text-align: left;
+  z-index: 1000;
+  margin-left: 10px;
+}
+/* line 300, ../scss/main.sass */
+html .left-column ol, html .right-column ol, html .proposal ol {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+/* line 305, ../scss/main.sass */
+html .left-column ul li, html .right-column ul li, html .proposal ul li {
+  font-size: 18px;
+  letter-spacing: 1px;
+  list-style: disc;
+}
+/* line 309, ../scss/main.sass */
+html .left-column ol li, html .right-column ol li, html .proposal ol li {
+  list-style: decimal;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+/* line 314, ../scss/main.sass */
+html .left-column h4, html .right-column h4, html .proposal h4 {
+  margin-left: 0px;
+  font-family: RalewayBold;
+  font-style: normal;
+  font-size: 24px;
+}
+/* line 320, ../scss/main.sass */
+html .left-column h3, html .left-column .header, html .right-column h3, html .right-column .header, html .proposal h3, html .proposal .header {
+  line-height: 1.2em;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 38px;
+  border-bottom: 2px solid #868686;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+/* line 331, ../scss/main.sass */
+html .left-column h3 strong, html .left-column .header strong, html .right-column h3 strong, html .right-column .header strong, html .proposal h3 strong, html .proposal .header strong {
+  font-size: 60px;
+}
+/* line 334, ../scss/main.sass */
+html .left-column p small, html .right-column p small, html .proposal p small {
+  font-size: 13px;
+}
+/* line 336, ../scss/main.sass */
+html .left-column p, html .right-column p, html .proposal p {
+  text-align: left;
+  font-family: "RalewaySemiBold";
+  font-size: 20px;
+  margin-left: 0;
+}
+/* line 342, ../scss/main.sass */
+html .left-column em, html .right-column em, html .proposal em {
+  font-size: 15px;
+}
+/* line 345, ../scss/main.sass */
+html .left-column a, html .right-column a, html .proposal a {
+  color: white;
+}
+/* line 349, ../scss/main.sass */
+html .left-column .center-vertical, html .right-column .center-vertical, html .proposal .center-vertical {
+  font-size: 20px;
+  line-height: 1.3em;
+  text-align: left;
+}
+/* line 66, arrows/*.png */
+html .arrows-sprite {
+  background: url('http://nascar.thedigideck.com/organizations/nascar/images/arrows-s324c018036.png') no-repeat;
+}
+/* line 355, ../scss/main.sass */
+html #next-arrow, html #previous-arrow {
+  width: 21px;
+  height: 37px;
+  top: 49px;
+  z-index: 1000;
+}
+/* line 361, ../scss/main.sass */
+html #next-arrow {
+  right: 25px;
+  background: url("http://nascar.thedigideck.com/images/rightarrowbottom.png") no-repeat;
+}
+/* line 366, ../scss/main.sass */
+html #previous-arrow {
+  left: 141px;
+  background: url("http://nascar.thedigideck.com/images/leftarrowbottom.png") no-repeat;
+}
+/* line 370, ../scss/main.sass */
+html #menu-dock {
+  left: 174px;
+  right: 63px;
+}
+/* line 373, ../scss/main.sass */
+html #menu-dock a.next-section {
+  width: 88px;
+  height: 108px;
+  display: block;
+  float: left;
+  padding-top: 29px;
+  color: white;
+  background: url("http://nascar.thedigideck.com/images/nextsection.jpg") no-repeat;
+  margin-top: 8px;
+}
+/* line 383, ../scss/main.sass */
+html #menu-dock #menu-dock-list ul {
+  margin-left: 0px;
+}
+/* line 385, ../scss/main.sass */
+html #menu-dock #menu-dock-list ul li {
+  font-family: RalewayBold;
+  width: 180px;
+  line-height: 1em;
+  font-size: 11px;
+  margin: 5px 3px;
+  height: 115px;
+}
+/* line 393, ../scss/main.sass */
+html #menu-dock #menu-dock-list ul li .double {
+  position: absolute;
+  margin-top: -45px;
+  padding: 7px 0;
+  width: 180px;
+}
+/* line 399, ../scss/main.sass */
+html #menu-dock #menu-dock-list ul li .single {
+  position: absolute;
+  margin-top: -35px;
+  padding: 7px 0;
+  width: 180px;
+}
+/* line 406, ../scss/main.sass */
+html #menu-dock #menu-dock-list ul li.active img, html #menu-dock #menu-dock-list ul li.hover img, html #menu-dock #menu-dock-list ul li.selected img {
+  opacity: 1;
+}
+/* line 408, ../scss/main.sass */
+html #menu-dock #menu-dock-list ul li.active p, html #menu-dock #menu-dock-list ul li.hover p, html #menu-dock #menu-dock-list ul li.selected p {
+  display: none;
+}
+/* line 410, ../scss/main.sass */
+html #menu-dock #menu-dock-list ul li p {
+  width: 100%;
+  background: black;
+  font-size: 13px;
+}
+/* line 415, ../scss/main.sass */
+html #menu-dock #menu-dock-list ul li img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0.4;
+}
+/* line 422, ../scss/main.sass */
+html #section-menu-btn {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 188px;
+  background: url("http://nascar.thedigideck.com/images/section-menu-btn.png");
+}
+/* line 428, ../scss/main.sass */
+html #content-shadow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 92px;
+  height: 100%;
+  background: url("http://nascar.thedigideck.com/images/menu-dock-end.png");
+}
+/* line 436, ../scss/main.sass */
+html .popdown-header, html .popdown {
+  left: auto;
+  right: 10px;
+  text-align: left;
+}
+/* line 441, ../scss/main.sass */
+html .popdown-header {
+  width: auto;
+  min-width: 380px;
+  font-family: RalewaySemiBold;
+  border-bottom: 1px solid white;
+}
+/* line 447, ../scss/main.sass */
+html .popdown-header .popdown-button {
+  top: 0px;
+  width: 30px;
+  height: 28px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  float: none;
+}
+/* line 455, ../scss/main.sass */
+html .popdown-header.popped .popdown-button {
+  background: url("http://nascar.thedigideck.com/images/hide-info.png");
+  background-position: top center;
+}
+/* line 459, ../scss/main.sass */
+html .popdown {
+  width: 360px;
+  top: 61px;
+}
+/* line 463, ../scss/main.sass */
+html #video-overlay {
+  z-index: 9000;
+}
+/* line 466, ../scss/main.sass */
+html #menu-bg, html #video-overlay {
+  background-image: url("http://nascar.thedigideck.com/organizations/nascar/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+/* line 472, ../scss/main.sass */
+html .intro-logo {
+  background: url("http://nascar.thedigideck.com/organizations/nascar/section-menu/intro-logo.png");
+  width: 510px;
+  height: 106px;
+  margin-left: -215px;
+  margin-top: -341px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+}
+/* line 484, ../scss/main.sass */
+html #video-container {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+/* line 488, ../scss/main.sass */
+html #video-container .bgimg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-size: cover;
+}
+/* line 496, ../scss/main.sass */
+html #video-container video {
+  width: 100%;
+  height: 100%;
+}
+/* line 500, ../scss/main.sass */
+html #video-container #intro-video {
+  position: absolute;
+  height: 496px;
+  width: 896px;
+  left: 50%;
+  margin-left: -448px;
+  top: 50%;
+  margin-top: -225px;
+  border: 10px solid black;
+  box-shadow: 1px 2px 3px black;
+}
+/* line 510, ../scss/main.sass */
+html #video-container #intro-video video {
+  width: 100%;
+  height: 100%;
+}
+/* line 515, ../scss/main.sass */
+html #video-container #thePlayer {
+  box-shadow: 0 0 10px black;
+  height: 496px;
+  width: 896px;
+  left: 0px;
+  background-color: #004c9e;
+  position: absolute;
+  top: 0px;
+}
+/* line 523, ../scss/main.sass */
+html #video-container #thePlayer video {
+  width: 100%;
+  height: 100%;
+}
+/* line 527, ../scss/main.sass */
+html #skip-intro {
+  position: absolute;
+  cursor: pointer;
+  height: 41px;
+  left: 50%;
+  top: 50%;
+  width: 202px;
+  z-index: 103;
+  overflow: hidden;
+  background: url("http://nascar.thedigideck.com/organizations/nascar/images/skip-btn.png") no-repeat;
+  margin-left: 280px;
+  margin-top: 291px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 540, ../scss/main.sass */
+html #skip-intro:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 543, ../scss/main.sass */
+html #loading-wrap {
+  position: fixed;
+  z-index: 9999;
+  background: #d4d4d4;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+/* line 551, ../scss/main.sass */
+html #loading-wrap .loading-bar {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 555, ../scss/main.sass */
+.dsm-rotator {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 562, ../scss/main.sass */
+.dsm-rotator .rotator-arrow-previous {
+  position: absolute;
+  z-index: 2;
+  left: 31%;
+  top: 50%;
+  width: 40px;
+  height: 53px;
+  margin-top: -20px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("http://nascar.thedigideck.com/images/leftarrow.png");
+  text-indent: -9000px;
+}
+/* line 574, ../scss/main.sass */
+.dsm-rotator .rotator-arrow-next {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("http://nascar.thedigideck.com/images/rightarrow.png");
+  width: 40px;
+  height: 53px;
+  text-indent: -9000px;
+}
+/* line 586, ../scss/main.sass */
+.dsm-rotator .rotator-arrow-up {
+  position: absolute;
+  z-index: 2;
+  left: 63%;
+  top: 0;
+  width: 40px;
+  height: 53px;
+  margin-top: -20px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("http://nascar.thedigideck.com/images/leftarrow.png");
+  text-indent: -9000px;
+}
+/* line 598, ../scss/main.sass */
+.dsm-rotator .rotator-arrow-down {
+  position: absolute;
+  z-index: 2;
+  right: 34%;
+  bottom: 0;
+  margin-top: -20px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("http://nascar.thedigideck.com/images/rightarrow.png");
+  width: 40px;
+  height: 53px;
+  text-indent: -9000px;
+}
+/* line 610, ../scss/main.sass */
+.dsm-rotator .rotator-slides {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 617, ../scss/main.sass */
+.dsm-rotator .rotator-slides .rotator-slide {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 618, ../scss/main.sass */
+.dsm-rotator .rotator-slides .rotator-slide.active {
+  visibility: visible;
+}
+
+/* line 628, ../scss/main.sass */
+.dsm-panorama {
+  position: absolute;
+  left: 30%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+/* line 636, ../scss/main.sass */
+#presentation-info {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 10000;
+}
+
+/* line 644, ../scss/main.sass */
+.proposal-contain {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: auto;
+  height: 100%;
+  width: 42%;
+  max-width: 500px;
+  overflow: hidden;
+  z-index: 9;
+  border-bottom: 0px solid #666666;
+  background: #005abb;
+}
+/* line 656, ../scss/main.sass */
+.proposal-contain .proposal {
+  width: auto;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 46px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  border-left: none;
+}
+/* line 666, ../scss/main.sass */
+.proposal-contain .proposal .proposal-center-vertical {
+  width: 100%;
+  padding: 35px 0px 35px 0px;
+  top: 0px;
+  padding-top: 35px;
+  position: absolute;
+}
+/* line 675, ../scss/main.sass */
+.proposal-contain .proposal-bar {
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  background: #005abb;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  font-family: MachineBT;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  line-height: 45px;
+}
+/* line 692, ../scss/main.sass */
+.proposal-contain .proposal-bar .logo {
+  position: absolute;
+  left: 40px;
+  top: 0px;
+  padding: 2px 5px 2px 5px;
+  width: 40px;
+  max-height: 40px;
+}
+/* line 700, ../scss/main.sass */
+.proposal-contain .proposal-bar .logo.last {
+  right: 40px;
+  left: auto;
+}
+/* line 706, ../scss/main.sass */
+.proposal-contain .proposal-bar.expanded .expandarrow {
+  background: url("http://nascar.thedigideck.com/images/collapsearrow.png") no-repeat right;
+}
+/* line 710, ../scss/main.sass */
+.proposal-contain .proposal-bar .expandarrow {
+  color: #cce2db;
+  height: 25px;
+  width: 25px;
+  background: url("http://nascar.thedigideck.com/images/expandarrow.png") no-repeat right;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+/* line 720, ../scss/main.sass */
+.proposal-contain .proposal-bar .expandarrow.last {
+  right: 5px;
+  left: auto;
+}
+
+/* line 727, ../scss/main.sass */
+.slide.has-proposal .left-column .center-vertical {
+  padding-bottom: 130px;
+}
+
+/* line 730, ../scss/main.sass */
+.dsm-video .video-container {
+  left: 30%;
+  margin-left: 30px;
+  border: 10px solid black;
+}
+
+/* line 734, ../scss/main.sass */
+html .left-column p {
+  text-align: left;
+}
+
+/* line 737, ../scss/main.sass */
+.section-tab {
+  bottom: 0;
+  position: absolute;
+  height: 20px;
+  width: auto;
+  right: 40px;
+  left: auto;
+  background: #073056;
+  z-index: 10;
+  padding: 5px 15px 0px 15px;
+  bottom: 110px;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* line 749, ../scss/main.sass */
+#presentation-info {
+  position: absolute;
+  height: 0;
+  top: 0;
+  width: 100%;
+  overflow: visible;
+}
+
+/* line 756, ../scss/main.sass */
+#presentation-logo {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 200px;
+}
+/* line 762, ../scss/main.sass */
+#presentation-logo img {
+  float: right;
+  height: 110px;
+}
+
+/* line 765, ../scss/main.sass */
+#presentation-name {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 26pt;
+  text-shadow: 4px 4px 3px black;
+}
+
+/* line 774, ../scss/main.sass */
+#menu-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url("http://nascar.thedigideck.com/organizations/nascar/images/background.jpg") center center no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  display: block;
+}
+/* line 783, ../scss/main.sass */
+#menu-container .section-menu-sizing-constraint {
+  top: 100px;
+  bottom: 200px;
+  width: 90%;
+  max-width: 1100px;
+  min-width: 800px;
+  min-height: 300px;
+  position: absolute;
+}
+/* line 791, ../scss/main.sass */
+#menu-container .section-menu-positioner {
+  top: 60%;
+  left: 50%;
+  display: block;
+  position: absolute;
+  overflow: visible;
+  border: 4px solid black;
+}
+/* line 798, ../scss/main.sass */
+#menu-container .section-menu-constraint {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+/* line 804, ../scss/main.sass */
+#menu-container ul.section-menu {
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 811, ../scss/main.sass */
+#menu-container .menu-item {
+  height: 100%;
+  float: left;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
+}
+/* line 817, ../scss/main.sass */
+#menu-container .menu-item a, #menu-container .menu-item div {
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+/* line 827, ../scss/main.sass */
+#menu-container .menu-item a img, #menu-container .menu-item div img {
+  display: block;
+  height: 100%;
+  float: right;
+}
+/* line 831, ../scss/main.sass */
+#menu-container .menu-logo {
+  position: absolute;
+  background: url("http://nascar.thedigideck.com/organizations/nascar/section-menu/intro-logo.png") no-repeat;
+  z-index: 1;
+  margin-left: -240px;
+  left: 50%;
+  width: 510px;
+  height: 106px;
+  top: -123px;
+}
+
+/* line 841, ../scss/main.sass */
+html .column-block .fit-container-border {
+  left: 30%;
+}
+
+/* line 844, ../scss/main.sass */
+.video-layer, .popup-layer, .popup-text-layer {
+  top: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 852, ../scss/main.sass */
+.video-layer img.popup, .popup-layer img.popup, .popup-text-layer img.popup {
+  display: block;
+  margin-top: 12%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+/* line 862, ../scss/main.sass */
+.video-layer .popup-image-screen, .video-layer .popup-text-screen, .popup-layer .popup-image-screen, .popup-layer .popup-text-screen, .popup-text-layer .popup-image-screen, .popup-text-layer .popup-text-screen {
+  z-index: 0;
+  display: block;
+}
+
+/* line 865, ../scss/main.sass */
+.toggle-video, .toggle-video.toggle-video-single, .toggle-embed {
+  display: block;
+  width: 173px;
+  height: 46px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  overflow: hidden;
+  text-indent: -9000px;
+  background: url("http://nascar.thedigideck.com/images/playvideobtn.png");
+}
+
+/* line 875, ../scss/main.sass */
+.close-video {
+  position: absolute;
+  right: 10px;
+  top: -50px;
+  width: 202px;
+  height: 40px;
+  background: url("http://nascar.thedigideck.com/images/video-close.png");
+  cursor: pointer;
+}
+
+/* line 50, video-menu-button/*.png */
+.video-menu-button-sprite, .video-menu:hover .video-menu-button, .video-menu-button {
+  background: url('http://nascar.thedigideck.com/organizations/nascar/images/video-menu-button-sfa8b080784.png') no-repeat;
+}
+
+/* line 887, ../scss/main.sass */
+.video-menu {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  width: 95px;
+  height: 95px;
+  overflow: hidden;
+  transition: width 400ms, height 400ms;
+  -webkit-transition: width 400ms, height 400ms;
+}
+/* line 899, ../scss/main.sass */
+.video-menu:hover {
+  width: 250px;
+  height: 100%;
+}
+/* line 902, ../scss/main.sass */
+.video-menu:hover .video-menu-button {
+  background-position: 0 0;
+}
+
+/* line 905, ../scss/main.sass */
+.video-menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  background-position: 0 -75px;
+}
+
+/* line 913, ../scss/main.sass */
+.video-menu-title {
+  font-family: MachineBT;
+  font-weight: bold;
+  position: relative;
+  top: -30px;
+  background: url("http://nascar.thedigideck.com/images/video-menu-arrow.png") no-repeat 165px 0px;
+  padding-top: 30px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+/* line 924, ../scss/main.sass */
+.video-menu-list {
+  background-color: #0b0b0b;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #0b0b0b), color-stop(50%, #242424), color-stop(100%, #0b0b0b));
+  background: -webkit-linear-gradient(left, #0b0b0b, #242424 50%, #0b0b0b);
+  background: -moz-linear-gradient(left, #0b0b0b, #242424 50%, #0b0b0b);
+  background: -o-linear-gradient(left, #0b0b0b, #242424 50%, #0b0b0b);
+  -pie-background: linear-gradient(left, #0b0b0b, #242424 50%, #0b0b0b);
+  background: linear-gradient(left, #0b0b0b, #242424 50%, #0b0b0b);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #434343;
+  padding: 10px;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 230px;
+  max-height: 60%;
+  overflow: auto;
+}
+/* line 936, ../scss/main.sass */
+.video-menu-list li {
+  border-top: 1px solid #434343;
+  text-align: left;
+  background-image: url("http://nascar.thedigideck.com/images/video-menu-play/inactive.png");
+  background-repeat: no-repeat;
+  background-position: 200px 10px;
+}
+/* line 942, ../scss/main.sass */
+.video-menu-list li:hover {
+  background-color: #222222;
+  background-image: url("http://nascar.thedigideck.com/images/video-menu-play/active.png");
+}
+/* line 945, ../scss/main.sass */
+.video-menu-list li a {
+  padding: 5px;
+  padding-right: 30px;
+  display: block;
+  color: white;
+  font-family: RalewayLight;
+  font-weight: bold;
+  font-style: italic;
+  min-height: 30px;
+}
+/* line 954, ../scss/main.sass */
+.video-menu-list li .dsm-popup-video {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 959, ../scss/main.sass */
+.proposal-contain {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  top: auto;
+  height: 100%;
+  width: 30%;
+  max-width: none;
+  overflow: hidden;
+  z-index: 9;
+  border-bottom: 0px solid #666666;
+  background: black;
+  z-index: 1001;
+}
+/* line 972, ../scss/main.sass */
+.proposal-contain .proposal {
+  width: auto;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 46px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  border-left: none;
+  margin-left: 0px;
+}
+/* line 983, ../scss/main.sass */
+.proposal-contain .proposal .proposal-center-vertical {
+  width: 100%;
+  padding: 35px 0px 35px 0px;
+  top: 0px;
+  padding-top: 35px;
+  position: absolute;
+}
+/* line 992, ../scss/main.sass */
+.proposal-contain .proposal-bar {
+  background: black;
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  font-family: MachineBT;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  line-height: 45px;
+}
+/* line 1011, ../scss/main.sass */
+.proposal-contain .proposal-bar span {
+  display: relative;
+  margin-left: 60px;
+}
+/* line 1014, ../scss/main.sass */
+.proposal-contain .proposal-bar .logo {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  padding: 2px 5px 2px 5px;
+  max-width: 100px;
+  max-height: 40px;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  display: none;
+}
+/* line 1026, ../scss/main.sass */
+.proposal-contain .proposal-bar .logo.last {
+  right: 3px;
+  left: auto;
+  display: block;
+}
+/* line 1031, ../scss/main.sass */
+.proposal-contain .proposal-bar.expanded .expandarrow {
+  background: url("http://nascar.thedigideck.com/images/collapsearrow.png") no-repeat right;
+}
+/* line 1033, ../scss/main.sass */
+.proposal-contain .proposal-bar .expandarrow.last {
+  display: none;
+}
+/* line 1037, ../scss/main.sass */
+.proposal-contain .proposal-bar .expandarrow {
+  color: #cce2db;
+  height: 30px;
+  width: 30px;
+  background: url("http://nascar.thedigideck.com/images/expandarrow.png") no-repeat right;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}

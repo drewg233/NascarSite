@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=1024, initial-scale=0.8, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no">
+    <title>NASCAR</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="./css/mediaelementplayer.css" />
+      
+    <!-- Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./css/jquery.transit.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="./css/events.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./css/mediaelement-and-player.min.js"></script>
+    <script type='text/javascript' src='./css/script.js'></script>
+    <script type='text/javascript' src='./css/introvideo.js'></script>
+    <script src="./css/pano.js"></script>
+
+    <script type="text/javascript">
+      window.digideck = {
+      'organization': {"id":16,"subdomain":"nascar","name":"NASCAR","updated":1393986106},
+      'presentation': {"id":872,"subdomain":"d","name":"Default","logo-url":"\/image\/5365","logoId":5365,"created":1383530794,"updated":1400710498,"author":"Dan Menssen","color":"#FFFFFF","pdf_status":0,"zip_status":0}
+      , 'section': { layout: 'default' }
+      };
+    </script>
+    <script type='text/javascript'>
+      $('.video-menu-list>li>a').click(function() {
+        $(this).parent().find('.toggle-video').click();
+      });
+    </script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <div id="loading-wrap">
+      <div class="loading-bar"><p>Loading...</p></div>
+    </div>
+
+    <div id="wrapper">
+      <div id="vtop-full"></div>
+      <div id="vright-full"></div>
+      <div id="vbottom-full"></div>
+      <div id="vleft-full"></div>
+      <div id="video-overlay" class='slide'>
+        <div id="skip-intro"></div>
+        <div id="video-container">
+          <div id="intro-video">
+            <div id="thePlayer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="menu-bg" class="bgimg" style="display: none"></div>
+    <div id="menu-container">
+      <div class='section-menu-sizing-constraint'>
+        <div class='section-menu-positioner'>
+          <div class='section-menu-constraint'>
+            <ul class="section-menu">
+
+              <!-- Intro Video -->
+              <li class="menu-item menu-item-intro">
+                <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-intro-off.jpg')">
+                  <img src="./images/heading-intro-off.png">
+                </div>
+                <a href="/d/intro" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-intro-on.jpg')">
+                  <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-intro-on.png">
+                </a>
+              </li>
+
+              <!-- Power of Nascar -->
+              <li class="menu-item menu-item-power">
+                <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-power-off.jpg')">
+                  <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-power-off.png">
+                </div>
+                <a href="/d/power" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-power-on.jpg')">
+                  <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-power-on.png">
+                </a>
+              </li>
+
+              <!-- Nascar Partnership -->
+              <li class="menu-item menu-item-partnership">
+                <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-partnership-off.jpg')">
+                  <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-partnership-off.png">
+                </div>
+                <a href="/d/partnership" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-partnership-on.jpg')">
+                  <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-partnership-on.png">
+                </a>
+              </li>
+
+              <!-- Nascar Green -->
+              <li class="menu-item menu-item-green">
+                <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-green-off.jpg')">
+                  <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-green-off.png">
+                </div>
+                <a href="/d/green" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-green-on.jpg')">
+                  <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-green-on.png">
+                </a>
+              </li>
+
+              <!-- Media Integration -->
+              <li class="menu-item menu-item-media">
+                <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-media-off.jpg')">
+                  <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-media-off.png">
+                </div>
+                <a href="/d/media" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-media-on.jpg')">
+                  <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-media-on.png">
+                </a>
+              </li>
+
+              <!-- Team And Driver -->
+              <li class="menu-item menu-item-team">
+                <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-team-off.jpg')">
+                  <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-team-off.png">
+                </div>
+                <a href="/d/team" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-team-on.jpg')">
+                  <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-team-on.png">
+                </a>
+              </li>
+
+              <!-- Track And Facilities -->
+              <li class="menu-item menu-item-track">
+                <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-track-off.jpg')">
+                  <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-track-off.png">
+                </div>
+                <a href="/d/track" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-track-on.jpg')">
+                  <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-track-on.png">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type='text/javascript'>
+      (function() {
+        $('img').load(function() {
+          $(this).data('loaded', true);
+        });
+        $(window).load(function() {
+          window.loaded = true;
+        });
+      })();
+    </script>
+
+    <script type="text/javascript" src="http://nascar.thedigideck.com/organizations/nascar/jwplayer/jwplayer.js"  charset="utf-8"></script>
+
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/main.js?8" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
