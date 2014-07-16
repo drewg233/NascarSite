@@ -27,7 +27,7 @@
         $('#skip-intro').click(endVideo);
         window.endVideo = true;
 
-        var videoUrl = 'http://831a7cf173c0d91861ef-a8c7d1aca3398043614c64ffa8e96f7b.r71.cf1.rackcdn.com/nascar/intro';
+        var videoUrl = './videos/intro';
 
         var ua = navigator.userAgent;
 
