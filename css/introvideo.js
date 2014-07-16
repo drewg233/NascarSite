@@ -34,7 +34,7 @@
         if (ua.match(/MSIE/i)) {
             jwplayer("thePlayer").setup({
                 skin: 'http://nascar.thedigideck.com/organizations/nascar/jwplayer/modieus/modieus.xml',
-                autoplay: false,
+                autoplay: true,
                 "controlbar.hide": true,
                 "controlbar.idlehide": true,
                 width: '100%',
@@ -54,7 +54,7 @@
             setTimeout(function() {
                 jwplayer("thePlayer").setup({
                                                 skin: 'http://nascar.thedigideck.com/organizations/nascar/jwplayer/modieus/modieus.xml',
-                    autoplay: false,
+                    autoplay: true,
                     "controlbar.hide": true,
                     "controlbar.idlehide": true,
                     width: '100%',
