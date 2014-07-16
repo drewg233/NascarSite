@@ -2066,3 +2066,18 @@ html .column-block .fit-container-border {
   left: 10px;
   top: 8px;
 }
+.footertext {
+  color: yellow;
+  font-size: 90px;
+  font-family: captainamerica;
+  text-align: center;
+  padding-top: 15px;
+  text-shadow: -1px 0 black, 0 7px black, 3px 0 black, 0 -1px black;
+}
+@font-face {
+  font-family: captainamerica;
+    src: url(../css/AmericanCaptain.ttf),
+         url(../css/AmericanCaptain.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
