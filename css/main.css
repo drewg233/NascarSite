@@ -2071,8 +2071,10 @@ html .column-block .fit-container-border {
   font-size: 90px;
   font-family: captainamerica;
   text-align: center;
-  padding-top: 15px;
   text-shadow: -1px 0 black, 0 7px black, 3px 0 black, 0 -1px black;
+  position: relative;
+  z-index: 1;
+  top: 475px;
 }
 @font-face {
   font-family: captainamerica;
@@ -2080,4 +2082,14 @@ html .column-block .fit-container-border {
          url(../css/AmericanCaptain.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+@media (max-width: 700px) {
+  .footertext {
+    font-size: 55px;
+  }
+}
+@media (min-height: 650px) {
+  .footertext {
+    top: 555px;
+  }
 }
