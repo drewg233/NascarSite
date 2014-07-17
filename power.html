@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    
+    <!--[if lte IE 8]>
+    <script type="text/javascript">
+        window.ie8 = true;
+    </script>
+    <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+        window.ie = true;
+    </script>
+    <![endif]-->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=1024, initial-scale=0.8, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        NASCAR    </title>
+
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/reset.css?1" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/fonts.css?1" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/main.css?9" type="text/css" media="screen" title="" charset="utf-8">
+        <link rel="apple-touch-icon" href="http://nascar.thedigideck.com/appleicons/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="http://nascar.thedigideck.com/appleicons/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="http://nascar.thedigideck.com/appleicons/touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="http://nascar.thedigideck.com/appleicons/touch-icon-ipad-retina.png" />
+    
+    <script type="text/javascript">
+        window.digideck = {
+            'organization': {"id":16,"subdomain":"nascar","name":"NASCAR","updated":1393986106},
+            'presentation': {"id":872,"subdomain":"d","name":"Default","logo-url":"\/image\/5365","logoId":5365,"created":1383530794,"updated":1400710498,"author":"Dan Menssen","color":"#FFFFFF","pdf_status":0,"zip_status":0}
+                        , 'section': {"id":138,"template":"default","shortName":"power","name":"Power of NASCAR"}
+                    };
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/jquery.min.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/jquery.transit.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/events.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/mediaelement/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/bundles/spodigdigideck/mediaelement/mediaelementplayer.css" />
+    <script type="text/javascript">
+    $(document).ready(function() {
+        if((navigator.userAgent.match(/iPad/i))) {
+            $('head').append('<link type="text/css" rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/tablet.css" />');
+            return;
+        }
+        var $t = $(window);
+
+        function adjustStyle(width, height) {
+            width = parseInt(width);
+            height = parseInt(height);
+
+            var $s = $('#size-stylesheet');
+            if ($s.length && (height < 800 || width < 1300)) {
+                return;
+            }
+
+            if (!$s.length && height >= 800 && width >= 1300) {
+                return;
+            }
+
+            if ($s.length && height >= 800 && width >= 1300) {
+                $s.attr('disabled', 'disabled');
+                $s.remove();
+                $('body').removeClass('small-stylesheet');
+                window.deck.trigger('change-stylesheet', 'normal');
+                return;
+            }
+
+            $('body').addClass('small-stylesheet');
+            $('head').append('<link id="size-stylesheet" type="text/css" rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/small.css" />');
+            window.deck.trigger('change-stylesheet', 'small');
+        };
+
+        adjustStyle($t.width(), $t.height());
+        $t.resize(function() {
+            adjustStyle($t.width(), $t.height());
+        });
+    });
+    </script>
+    <script type='text/javascript' src='./css/script.js'></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/krpano/pano.js"></script>
+
+        
+        
+</head>
+
+
+<!--[if lte IE 8]>
+<body class="ie8">
+<![endif]-->
+<!--[if IE 9]>
+<body class="ie9">
+<![endif]-->
+<!--[if gte IE 9 ]><!-->
+<body>
+<!--<![endif]-->
+
+<script type='text/javascript'>
+    $('.video-menu-list>li>a').click(function() {
+        $(this).parent().find('.toggle-video').click();
+    });
+</script>
+
+    <div id="loading-wrap">
+        <div class="loading-bar"><p>Loading...</p></div>
+    </div>
+
+            <div id="wrapper" class="section-name-power section-default menu-horizontal">
+    
+            
+        
+        
+        <div id="menu-wrap" class="horizontal">
+            <div id="content-shadow"></div>
+            <div id="section-menu-btn"></div>
+            <div id="next-arrow"></div>
+            <div id="previous-arrow"></div>
+            <div id="end-arrow"></div>
+            <div id="start-arrow"></div>
+            <div id="menu-dock">
+                <div id="menu-dock-list">
+                                                                		<ul class="ul-color1">
+        <div class="category-overlay color1">
+            <div class="category-title-color1">Power of NASCAR</div>
+        </div>
+						<li id="menu-item-6064" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/national-series.jpg" />
+                        <p>NASCAR Series Line Up</p>
+            </li>
+					<li id="menu-item-6065" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/series-pyramid.jpg" />
+                        <p>National Series</p>
+            </li>
+					<li id="menu-item-6066" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/national-reach.jpg" />
+                        <p>National Reach</p>
+            </li>
+					<li id="menu-item-6067" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/power-of-nascar.jpg" />
+                        <p>The Power of NASCAR</p>
+            </li>
+					<li id="menu-item-6068" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/fortune-500_1.jpg" />
+                        <p>Fortune 500</p>
+            </li>
+					<li id="menu-item-6069" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/brand-loyalty_1.jpg" />
+                        <p>Brand Loyalty</p>
+            </li>
+					<li id="menu-item-6070" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/fan-base_1.jpg" />
+                        <p>The NASCAR Fan Base</p>
+            </li>
+					<li id="menu-item-6071" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/fan-base-demographics.jpg" />
+                        <p>Fan Base Demographics</p>
+            </li>
+					<li id="menu-item-6072" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/veiwership-among-major-sports.jpg" />
+                        <p>Viewership Among Major Sports</p>
+            </li>
+					<li id="menu-item-6073" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/veiwership-among-motorsports1.jpg" />
+                        <p>Viewership Among Motorsports</p>
+            </li>
+					<li id="menu-item-6074" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/fully-integrated-flatform.jpg" />
+                        <p>Fully Integrated Marketing Platform</p>
+            </li>
+					<li id="menu-item-6688" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/looking_forward.jpg" />
+                        <p>Looking Forward</p>
+            </li>
+			</ul>
+
+                                    </div>
+            </div>
+        </div>
+    
+        <div class="slide-container-outer-border horizontal">
+        <div class="slide-container-inner-border">
+            <div id="next-slide" class="horizontal"></div>
+            <div id="prev-slide" class="horizontal"></div>
+                                    
+<div data-slide-title="NASCAR&#x20;Series&#x20;Line&#x20;Up" id="slide-222790" class="slide-type-template  slide slide-6064 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/national-series.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/national-series.jpg" /></div>');
+    });
+</script>
+        </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="National&#x20;Series" id="slide-222791" class="slide-type-template  slide slide-6065 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/series-pyramid.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/series-pyramid.jpg" /></div>');
+    });
+</script>
+        </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="National&#x20;Reach" id="slide-222792" class="slide-type-template  slide slide-6066 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/national-reach.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/national-reach.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+National<br /><strong>Reach</strong>
+
+
+</h3>
+                When It's More Than A Game, What's Next Is Always More Thrilling.<br><br>
+
+NASCAR is a true American original with a one-of-a-kind history and a boundless future. It's a universal connection that transcends age, ethnicity and geography. NASCAR is wide open to everyone. And that's why, to millions of NASCAR fans, this is more than a game.
+
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="The&#x20;Power&#x20;of&#x20;NASCAR" id="slide-222793" class="slide-type-template  slide slide-6067 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/power-of-nascar.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/power-of-nascar.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+The Power<br /><strong>of NASCAR</strong>
+
+
+</h3>
+                <h4>#1 Sport in Fan Brand Loyalty</h4>
+<ul><li>NASCAR fans vote with their wallets and support the many brands participating in the sport</li></ul>
+
+<h4>#2 Sport on Television</h4>
+<ul><li>More than 80 million unique viewers</li>
+<li>Outperforms 75% of primetime TV and all of late night comedy</li></ul>
+
+<h4>#1 Spectator Sport</h4>
+<ul><li>Over half of the largest sporting events</li>
+<li>Larger than the Super Bowl, an NBA Finals game and a World Series game combined</li></ul>
+
+<h4>Economic Impact</h4>
+<ul><li>Events add $100 - $200 million to local economies</li>
+<li>10-month season allows for a yearlong, lifestyle-marketing platform</li></ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Fortune&#x20;500" id="slide-222794" class="slide-type-template  slide slide-6068 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+            <div class='dsm-rotator'>
+            <div class='rotator-arrow-previous'>previous</div>
+            <div class='rotator-slides'>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/fortune-500_1.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/fortune-500_1.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/fortune-500_2.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/fortune-500_2.jpg" /></div>');
+    });
+</script>
+                    </div>
+                            </div>
+            <div class='rotator-arrow-next'>next</div>
+            <div class='rotator-dots'></div>
+        </div>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+Fortune<br /><strong>500</strong>
+
+
+</h3>
+                <ul><li>More Fortune 500 companies depend on NASCAR than any other sport</li>
+<li>#1 sport in B2B opportunities</li>
+<li>Most successful B2B platform in all sports</li></ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Brand&#x20;Loyalty" id="slide-222795" class="slide-type-template  slide slide-6069 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+            <div class='dsm-rotator'>
+            <div class='rotator-arrow-previous'>previous</div>
+            <div class='rotator-slides'>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/brand-loyalty_1.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/brand-loyalty_1.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/brand_loyalty_5.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/brand_loyalty_5.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/brand-loyalty_4.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/brand-loyalty_4.jpg" /></div>');
+    });
+</script>
+                    </div>
+                            </div>
+            <div class='rotator-arrow-next'>next</div>
+            <div class='rotator-dots'></div>
+        </div>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+Brand<br /><strong>Loyalty</strong>
+
+
+</h3>
+                <h4>NASCAR is #1 in Loyalty among Major U.S. Sports</h4><br>
+
+Avid NASCAR fans are more likely to support official sponsors than any other major U.S. sports followers.
+
+<br><br>
+
+<em>Source: Turnkey Sports & Entertainment, results published in SBJ</em></p>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="The&#x20;NASCAR&#x20;Fan&#x20;Base" id="slide-222796" class="slide-type-template  slide slide-6070 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+            <div class='dsm-rotator'>
+            <div class='rotator-arrow-previous'>previous</div>
+            <div class='rotator-slides'>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base_1.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base_1.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base_2.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base_2.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base_3.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base_3.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base_5.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base_5.jpg" /></div>');
+    });
+</script>
+                    </div>
+                            </div>
+            <div class='rotator-arrow-next'>next</div>
+            <div class='rotator-dots'></div>
+        </div>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+The NASCAR<br /><strong>Fan Base</strong>
+
+
+</h3>
+                <h4>Gender Neutral</h4>
+<ul><li>62% male</li>
+<li>38% female</li></ul>
+
+<h4>Appeals to Key Demos</h4>
+<ul><li>31% of all NASCAR fans between ages 18-34</li></ul>
+
+<h4>Disposable Income</h4>
+<ul><li>47% of all NASCAR fans have income of $50,000+</li></ul>
+
+<h4>Family Focused</h4>
+<ul><li>#2 rated sport on TV among viewers under 18</li></ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Fan&#x20;Base&#x20;Demographics" id="slide-222797" class="slide-type-template  slide slide-6071 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base-demographics.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/fan-base-demographics.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Fan Base<br /><strong>Demographics</strong>
+
+
+</h3>
+                More than fans of any other sport, NASCAR fans share a unique and powerful connection with their sport and athletes.
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Viewership&#x20;Among&#x20;Major&#x20;Sports" id="slide-222798" class="slide-type-template  slide slide-6072 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/veiwership-among-major-sports.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/veiwership-among-major-sports.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Viewership Among<br /><strong>Major Sports</strong>
+
+
+</h3>
+                When your events draw an average of around 100,000 fans, "major" doesn't even begin to describe it.
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Viewership&#x20;Among&#x20;Motorsports" id="slide-222799" class="slide-type-template  slide slide-6073 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/veiwership-among-motorsports1.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/veiwership-among-motorsports1.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Viewership Among<br /><strong>Motorsports</strong>
+
+
+</h3>
+                The NASCAR Sprint Cup Series and the NASCAR Nationwide Series are the No. 1 and No. 2 motorsports series in average viewers tuned in per event.<br><br>
+<em>*Ranked based on overall viewers. Results reflect year-end 2012 season data. Source: The Nielsen Company</em>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Fully&#x20;Integrated&#x20;Marketing&#x20;Platform" id="slide-222800" class="slide-type-template  slide slide-6074 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/fully-integrated-flatform.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/fully-integrated-flatform.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+Fully Integrated <br /><strong>Marketing Platform</strong>
+
+</h3>
+                History has shown that the most efficient and effective marketers in NASCAR are those that combine a fully integrated marketing platform.
+                                            <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/6074:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-6074-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Looking&#x20;Forward" id="slide-222858" class="slide-type-template  slide slide-6688 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/looking_forward.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/looking_forward.jpg" /></div>');
+    });
+</script>
+        </div>
+</div>
+
+
+
+
+</div>
+            
+        </div>
+    </div>
+    
+
+                
+    </div>
+
+    <div id="menu-bg" class="bgimg" style="display: none"></div>
+    <div id="menu-container">
+                
+        <div class='section-menu-sizing-constraint'>
+    <div class='section-menu-positioner'>
+                <div class='section-menu-constraint'>
+            <ul class="section-menu">
+                                <li class="menu-item menu-item-intro">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-intro-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-intro-off.png">
+                    </div>
+                    <a href="/d/intro" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-intro-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-intro-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-power">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-power-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-power-off.png">
+                    </div>
+                    <a href="/d/power" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-power-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-power-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-partnership">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-partnership-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-partnership-off.png">
+                    </div>
+                    <a href="/d/partnership" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-partnership-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-partnership-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-green">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-green-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-green-off.png">
+                    </div>
+                    <a href="/d/green" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-green-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-green-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-media">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-media-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-media-off.png">
+                    </div>
+                    <a href="/d/media" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-media-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-media-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-team">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-team-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-team-off.png">
+                    </div>
+                    <a href="/d/team" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-team-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-team-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-track">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-track-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-track-off.png">
+                    </div>
+                    <a href="/d/track" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-track-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-track-on.png">
+                    </a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+
+        <script type='text/javascript'>
+        (function() {
+            $('img').load(function() {
+                $(this).data('loaded', true);
+            });
+            $(window).load(function() {
+                window.loaded = true;
+            });
+        })();
+    </script>
+
+    <script type="text/javascript" src="http://nascar.thedigideck.com/organizations/nascar/jwplayer/jwplayer.js"  charset="utf-8"></script>
+
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/main.js?8" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

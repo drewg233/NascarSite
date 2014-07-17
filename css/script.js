@@ -395,42 +395,42 @@ $(function() {
     switch(window.digideck.section.name) {
         case 'Power of NASCAR':
             strongText.css('color', '#f4902d');
-            menuButton.css('background', 'url("../organizations/nascar/images/section-menu-button-orange.png")');
+            menuButton.css('background', 'url("http://nascar.thedigideck.com/organizations/nascar/images/section-menu-button-orange.png")');
             menuItemTitle.css('background', '#f4902d');
             sectionTab.css('background', '#f4902d');
             propBar.css({ 'background': '#f4902d' });
             break;
         case 'Official NASCAR Partnership':
             strongText.css('color', '#e9142b');
-            menuButton.css('background', 'url("../organizations/nascar/images/section-menu-button-red.png")');
+            menuButton.css('background', 'url("http://nascar.thedigideck.com/organizations/nascar/images/section-menu-button-red.png")');
             menuItemTitle.css('background', '#e9142b');
             sectionTab.css('background', '#e9142b');
             propBar.css({ 'background': '#e9142b' });
             break;
         case 'NASCAR Green':
             strongText.css('color', '#21aa5e');
-            menuButton.css('background', 'url("../organizations/nascar/images/section-menu-button-green.png")');
+            menuButton.css('background', 'url("http://nascar.thedigideck.com/organizations/nascar/images/section-menu-button-green.png")');
             menuItemTitle.css('background', '#21aa5e');
             sectionTab.css('background', '#21aa5e');
             propBar.css({ 'background': '#21aa53' });
             break;
         case 'Media Integration':
             strongText.css('color', '#a93f87');
-            menuButton.css('background', 'url("../organizations/nascar/images/section-menu-button-purple.png")');
+            menuButton.css('background', 'url("http://nascar.thedigideck.com/organizations/nascar/images/section-menu-button-purple.png")');
             menuItemTitle.css('background', '#a93f87');
             sectionTab.css('background', '#a93f87');
             propBar.css({ 'background': '#a93f87' });
             break;
         case 'Team & Driver':
             strongText.css('color', '#6b70a9');
-            menuButton.css('background', 'url("../organizations/nascar/images/section-menu-button-indigo.png")');
+            menuButton.css('background', 'url("http://nascar.thedigideck.com/organizations/nascar/images/section-menu-button-indigo.png")');
             menuItemTitle.css('background', '#6b70a9');
             sectionTab.css('background', '#6b70a9');
             propBar.css({ 'background': '#6b70a9' });
             break;
         case 'Track Facilities':
             strongText.css('color', '#0092d2');
-            menuButton.css('background', 'url("../organizations/nascar/images/section-menu-button-blue.png")');
+            menuButton.css('background', 'url("http://nascar.thedigideck.com/organizations/nascar/images/section-menu-button-blue.png")');
             menuItemTitle.css('background', '#0092d2');
             sectionTab.css('background', '#0092d2');
             propBar.css({ 'background': '#0092d2' });
