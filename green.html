@@ -1,0 +1,893 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    
+    <!--[if lte IE 8]>
+    <script type="text/javascript">
+        window.ie8 = true;
+    </script>
+    <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+        window.ie = true;
+    </script>
+    <![endif]-->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=1024, initial-scale=0.8, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        NASCAR    </title>
+
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/reset.css?1" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/fonts.css?1" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/main.css?9" type="text/css" media="screen" title="" charset="utf-8">
+        <link rel="apple-touch-icon" href="/appleicons/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/appleicons/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/appleicons/touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/appleicons/touch-icon-ipad-retina.png" />
+    
+    <script type="text/javascript">
+        window.digideck = {
+            'organization': {"id":16,"subdomain":"nascar","name":"NASCAR","updated":1393986106},
+            'presentation': {"id":872,"subdomain":"d","name":"Default","logo-url":"\/image\/5365","logoId":5365,"created":1383530794,"updated":1400710498,"author":"Dan Menssen","color":"#FFFFFF","pdf_status":2,"zip_status":2}
+                        , 'section': {"id":134,"template":"default","shortName":"green","name":"NASCAR Green"}
+                    };
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/jquery.min.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/jquery.transit.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/events.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/mediaelement/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/bundles/spodigdigideck/mediaelement/mediaelementplayer.css" />
+    <script type="text/javascript">
+    $(document).ready(function() {
+        if((navigator.userAgent.match(/iPad/i))) {
+            $('head').append('<link type="text/css" rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/tablet.css" />');
+            return;
+        }
+        var $t = $(window);
+
+        function adjustStyle(width, height) {
+            width = parseInt(width);
+            height = parseInt(height);
+
+            var $s = $('#size-stylesheet');
+            if ($s.length && (height < 800 || width < 1300)) {
+                return;
+            }
+
+            if (!$s.length && height >= 800 && width >= 1300) {
+                return;
+            }
+
+            if ($s.length && height >= 800 && width >= 1300) {
+                $s.attr('disabled', 'disabled');
+                $s.remove();
+                $('body').removeClass('small-stylesheet');
+                window.deck.trigger('change-stylesheet', 'normal');
+                return;
+            }
+
+            $('body').addClass('small-stylesheet');
+            $('head').append('<link id="size-stylesheet" type="text/css" rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/small.css" />');
+            window.deck.trigger('change-stylesheet', 'small');
+        };
+
+        adjustStyle($t.width(), $t.height());
+        $t.resize(function() {
+            adjustStyle($t.width(), $t.height());
+        });
+    });
+    </script>
+    <script type='text/javascript' src='./css/script.js'></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/krpano/pano.js"></script>
+
+        
+        
+</head>
+
+
+<!--[if lte IE 8]>
+<body class="ie8">
+<![endif]-->
+<!--[if IE 9]>
+<body class="ie9">
+<![endif]-->
+<!--[if gte IE 9 ]><!-->
+<body>
+<!--<![endif]-->
+
+<script type='text/javascript'>
+    $('.video-menu-list>li>a').click(function() {
+        $(this).parent().find('.toggle-video').click();
+    });
+</script>
+
+    <div id="loading-wrap">
+        <div class="loading-bar"><p>Loading...</p></div>
+    </div>
+
+            <div id="wrapper" class="section-name-green section-default menu-horizontal">
+    
+            
+        
+        
+        <div id="menu-wrap" class="horizontal">
+            <div id="content-shadow"></div>
+            <a href="./index.html"><div id="section-menu-btn"></div></a>
+            <div id="next-arrow"></div>
+            <div id="previous-arrow"></div>
+            <div id="end-arrow"></div>
+            <div id="start-arrow"></div>
+            <div id="menu-dock">
+                <div id="menu-dock-list">
+                                                                		<ul class="ul-color1">
+        <div class="category-overlay color1">
+            <div class="category-title-color1">About</div>
+        </div>
+						<li id="menu-item-6100" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/6100.jpg" />
+                        <p>NASCAR Green Impact</p>
+            </li>
+					<li id="menu-item-6101" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/6101.jpg" />
+                        <p>Core Messages and Initiatives</p>
+            </li>
+			</ul>
+
+                                                                                            		<ul class="ul-color2">
+        <div class="category-overlay color2">
+            <div class="category-title-color2">Waste</div>
+        </div>
+						<li id="menu-item-6102" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/recycling-program.jpg" />
+                        <p>Largest Recycling Program in Sports</p>
+            </li>
+					<li id="menu-item-6103" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/american-ethanol.jpg" />
+                        <p>Sunoco Green E15 and American Ethanol</p>
+            </li>
+			</ul>
+
+                                                                                            		<ul class="ul-color3">
+        <div class="category-overlay color3">
+            <div class="category-title-color3">Emissions</div>
+        </div>
+						<li id="menu-item-6104" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/clean-air.jpg" />
+                        <p>Reduced Emissions by 20%</p>
+            </li>
+			</ul>
+
+                                                                                            		<ul class="ul-color4">
+        <div class="category-overlay color4">
+            <div class="category-title-color4">Energy</div>
+        </div>
+						<li id="menu-item-6105" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/pocono.jpg" />
+                        <p>Sport Leaders in Renewable Energy</p>
+            </li>
+			</ul>
+
+                                                                                            		<ul class="ul-color5">
+        <div class="category-overlay color5">
+            <div class="category-title-color5">Green Sponsorship</div>
+        </div>
+						<li id="menu-item-6106" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/nascar-green-key partners.jpg" />
+                        <p>NASCAR Green Key Partners</p>
+            </li>
+					<li id="menu-item-6107" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/growth-in-industry.jpg" />
+                        <p>Growth in Industry Sponsors in Green</p>
+            </li>
+			</ul>
+
+                                                                                            		<ul class="ul-color6">
+        <div class="category-overlay color6">
+            <div class="category-title-color6">Involvement Opportunities</div>
+        </div>
+						<li id="menu-item-6108" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/targeted-marketing.jpg" />
+                        <p>Targeted Marketing</p>
+            </li>
+					<li id="menu-item-6109" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/operating-greener.jpg" />
+                        <p>Operating Greener</p>
+            </li>
+					<li id="menu-item-6110" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/green-twitter.jpg" />
+                        <p>Digital and Social Media Integration</p>
+            </li>
+					<li id="menu-item-6111" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/a-race-worth-leading.jpg" />
+                        <p>A Race Worth Leading</p>
+            </li>
+			</ul>
+
+                                    </div>
+            </div>
+        </div>
+    
+        <div class="slide-container-outer-border horizontal">
+        <div class="slide-container-inner-border">
+            <div id="next-slide" class="horizontal"></div>
+            <div id="prev-slide" class="horizontal"></div>
+                                    
+<div data-slide-title="NASCAR&#x20;Green&#x20;Impact" id="slide-222825" class="slide-type-template  slide slide-6100 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+            <div class="dsm-video">
+    <div class="video-container" data-video="cdn:nascar/video/nascar-goes-green:http://nascar.thedigideck.com/organizations/nascar/posters/nascar-goes-green.jpg">
+        <div style="height: 100%; position: relative; width: 100%">
+            <div id="dsm-video-6100-0" class="video-player">
+                            </div>
+        </div>
+    </div>
+</div>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+NASCAR <br /><strong>Green Impact</strong>
+
+</h3>
+                Arguably the most impactful platform in the history of the U.S. in terms of influencing green attitudes and behaviors on a population scale.
+<ul><li>NASCAR's 67 million fans are 100% more likely than non-fans to view their household as "very green"</li>
+<li>NASCAR fans are always looking for ways to positively impact the environment, up from 70% more likely just years ago</li>
+<li>Green consciousness in the U.S. has an unprecedented impact and continues to grow at nearly 50% annually based on survey of several thousand NASCAR fans vs non-fans.</li></ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Core&#x20;Messages&#x20;and&#x20;Initiatives" id="slide-222826" class="slide-type-template  slide slide-6101 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+            <div class="dsm-video">
+    <div class="video-container" data-video="cdn:nascar/video/tv-nascar-green-game-changer-refresh:http://nascar.thedigideck.com/organizations/nascar/posters/tv-nascar-green.jpg">
+        <div style="height: 100%; position: relative; width: 100%">
+            <div id="dsm-video-6101-0" class="video-player">
+                            </div>
+        </div>
+    </div>
+</div>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Core Messages and<br /><strong>Initiatives</strong>
+
+
+</h3>
+                Can A Sport Change The Way We Think About The Environment?
+Conservation of the Environment + Job Creation + Strengthening American Energy Independence
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                                
+<div data-slide-title="Largest&#x20;Recycling&#x20;Program&#x20;in&#x20;Sports" id="slide-222827" class="slide-type-template  slide slide-6102 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/recycling-program.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/recycling-program.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Largest Recycling Program<br /><strong>in Sports</strong>
+
+
+</h3>
+                NASCAR has the largest recycling and environmental sustainability programs among all U.S. sports. 
+<h4>Programs include:</h4>
+<ul>
+<li>Bottles and cans</li>
+<li>Electronics</li>
+<li>Tires</li>
+<li>Automotive fluids</li>
+<li>Car batteries</li>
+<li>Cell phones</li>
+</ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Sunoco&#x20;Green&#x20;E15&#x20;and&#x20;American&#x20;Ethanol" id="slide-222828" class="slide-type-template  slide slide-6103 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/american-ethanol.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/american-ethanol.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Sunoco Green E15 and American<br /><strong>Ethanol</strong>
+
+
+</h3>
+                Will exceed 4 million miles raced on Sunoco Green E15 in 2013
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                                
+<div data-slide-title="Reduced&#x20;Emissions&#x20;by&#x20;20&#x25;" id="slide-222829" class="slide-type-template  slide slide-6104 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/clean-air.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/clean-air.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Reduced Emissions<br /><strong>by 20%</strong>
+
+
+</h3>
+                <h4>Clean Air Tree Planting Program</h4>
+<ul><li>Each race weekend, NASCAR partners with the local community to plant (10) trees per green flag waved</li>
+<li><em>Each tree (not seedlings or saplings) that is planted offsets a Cup car's emissions for 500 miles</em></li>
+<li>This initiative has seen over 5,000 trees planted since 2009</li></ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                                
+<div data-slide-title="Sport&#x20;Leaders&#x20;in&#x20;Renewable&#x20;Energy" id="slide-222830" class="slide-type-template  slide slide-6105 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/pocono.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/pocono.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+Sport Leaders in <br /><strong>Renewable Energy</strong>
+
+</h3>
+                <ul><li>3MW Solar Plant</li>
+<li>Solar panels in garages</li>
+<li>Energy credit programs</li>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                                
+<div data-slide-title="NASCAR&#x20;Green&#x20;Key&#x20;Partners" id="slide-222831" class="slide-type-template  slide slide-6106 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/nascar-green-key partners.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/nascar-green-key partners.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+NASCAR <br /><strong>Green Key Partners</strong>
+
+</h3>
+                <h4>Liberty Tire</h4>
+<ul><li>Designates the tire recycling services provider as the "Official Tire Recycler of NASCAR Green."</li></ul>
+
+<h4>Green Earth Technologies</h4>
+<ul><li>Brings green cleaning to NASCAR with green alternative pressure washers and environment-safe cleaning products.</li></ul>
+
+<h4>UPS</h4>
+<ul><li>The Official Logistics Provider introduced environmental enhancements to its trackside pick-up and delivery operations.</li></ul>
+
+<h4>Creative Recycling</h4>
+<ul><li>This partner builds awareness and promotes viable solutions to consumers' electronics recycling needs.</li></ul>
+
+<h4>Eaton Corporation</h4>
+<ul><Li>Installed new electric vehicle charging stations at the now LEED-certified NASCAR headquarters.</li></ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Growth&#x20;in&#x20;Industry&#x20;Sponsors&#x20;in&#x20;Green" id="slide-222832" class="slide-type-template  slide slide-6107 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/growth-in-industry.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/growth-in-industry.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+Growth in Industry <br /><strong>Sponsors in Green</strong>
+
+</h3>
+                <h4>Key Green Sponsor examples:</h4>
+<ul>
+<li>Georgia Pacific</li>
+<li>Sun Energy</li>
+<li>POET</li>
+<li>Liberty Tire Recycling</li>
+<li>General Electric</li>
+</ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                                
+<div data-slide-title="Targeted&#x20;Marketing" id="slide-222833" class="slide-type-template  slide slide-6108 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/targeted-marketing.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/targeted-marketing.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+Targeted<br /><strong>Marketing</strong>
+
+
+</h3>
+                Additional marketing efforts during the months of March/April in continued celebration of NASCAR Green include:
+<ul>
+<li>Earth Day Infield</li>
+<li>Toyota Pace-Car</li>
+<li>3M Novec</li>
+<li>Clean Air Tree Planting Program</li>
+<li>NASCAR Green website/social media</li>
+<li>Miss Sprint Cup - recycling event</li>
+<li>Earned news coverage: race market to national</li>
+</ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Operating&#x20;Greener" id="slide-222834" class="slide-type-template  slide slide-6109 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/operating-greener.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/operating-greener.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+Operating<br /><strong>Greener</strong>
+
+
+</h3>
+                <ul>
+<li>Participation in the Clean Air Tree Planting Program</li>
+<li>E3: Economy, Energy & Environment<a href="http://www.e3.gov/" target="_blank"> [link]</a></li>
+<li>Design for the Environment<a href="http://www.epa.gov/dfe/" target="_blank"> [link]</a></li>
+<li>Renewable energy</li>
+<li>Electronics recycling</li>
+</ul>
+
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Digital&#x20;&amp;&#x20;Social&#x20;Media&#x20;Integration" id="slide-222835" class="slide-type-template  slide slide-6110 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+            <div class='dsm-rotator'>
+            <div class='rotator-arrow-previous'>previous</div>
+            <div class='rotator-slides'>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/green-twitter.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/green-twitter.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/track-green.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/track-green.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/website-green.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/website-green.jpg" /></div>');
+    });
+</script>
+                    </div>
+                            </div>
+            <div class='rotator-arrow-next'>next</div>
+            <div class='rotator-dots'></div>
+        </div>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Digital &amp; Social Media<br /><strong>Integration</strong>
+
+
+</h3>
+                <h4>NASCAR Green Website - www.nascar.com/green</h4>
+<ul>
+<li>This is the #1 green website in sports globally and has become an award-winning go-to portal for green content applied practically</li>
+<li>Create promotions that link back to your sites motivating fans to participate in green behavior, e.g. recycling</li>
+</ul>
+<h4>Twitter - @NASCARGreen</h4>
+<ul>
+<li>Work with NASCAR Green on Twitter integration strategy to ensure we are tweeting and re-tweeting efforts taking place</li>
+</ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="A&#x20;Race&#x20;Worth&#x20;Leading" id="slide-222836" class="slide-type-template  slide slide-6111 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/a-race-worth-leading.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/a-race-worth-leading.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+A Race Worth<br /><strong>Leading</strong>
+
+
+</h3>
+                <h4>New Initiative Analysis</h4>
+<ul>
+<li>Clear upside value and measurable positive environmental impact</li>
+<li>Strong, verified reputation both on tech and people side</li>
+<li>Fit to the sport</li>
+<li>Key risk areas low - all boxes checked: scientific risk, technical risk, market risk, and business risk</li>
+</ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+            
+        </div>
+    </div>
+    
+
+                
+    </div>
+
+    <div id="menu-bg" class="bgimg" style="display: none"></div>
+    <div id="menu-container">
+                
+        <div class='section-menu-sizing-constraint'>
+    <div class='section-menu-positioner'>
+                <div class='section-menu-constraint'>
+            <ul class="section-menu">
+                                <li class="menu-item menu-item-intro">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-intro-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-intro-off.png">
+                    </div>
+                    <a href="/d/intro" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-intro-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-intro-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-power">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-power-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-power-off.png">
+                    </div>
+                    <a href="/d/power" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-power-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-power-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-partnership">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-partnership-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-partnership-off.png">
+                    </div>
+                    <a href="/d/partnership" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-partnership-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-partnership-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-green">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-green-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-green-off.png">
+                    </div>
+                    <a href="/d/green" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-green-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-green-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-media">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-media-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-media-off.png">
+                    </div>
+                    <a href="/d/media" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-media-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-media-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-team">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-team-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-team-off.png">
+                    </div>
+                    <a href="/d/team" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-team-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-team-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-track">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-track-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-track-off.png">
+                    </div>
+                    <a href="/d/track" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-track-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-track-on.png">
+                    </a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+
+        <script type='text/javascript'>
+        (function() {
+            $('img').load(function() {
+                $(this).data('loaded', true);
+            });
+            $(window).load(function() {
+                window.loaded = true;
+            });
+        })();
+    </script>
+
+    <script type="text/javascript" src="http://nascar.thedigideck.com/organizations/nascar/jwplayer/jwplayer.js"  charset="utf-8"></script>
+
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/main.js?8" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
