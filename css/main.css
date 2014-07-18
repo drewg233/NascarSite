@@ -1229,7 +1229,7 @@ html #next-arrow, html #previous-arrow {
 /* line 361, ../scss/main.sass */
 html #next-arrow {
   right: 25px;
-  background: url("http://nascar.thedigideck.com/images/rightarrowbottom.png") no-repeat;
+  background: url("http://nascar.thedigideck.com/organizations/nascar/images/rightarrowbottom.png") no-repeat;
 }
 /* line 366, ../scss/main.sass */
 html #previous-arrow {
@@ -1306,7 +1306,7 @@ html #section-menu-btn {
   left: 0;
   top: 0;
   width: 188px;
-  background: url("./images/section-menu-button-orange.png");
+  background: url("../images/section-menu-button-orange.png");
 }
 /* line 428, ../scss/main.sass */
 html #content-shadow {
@@ -1315,7 +1315,7 @@ html #content-shadow {
   top: 0;
   width: 92px;
   height: 100%;
-  background: url("http://nascar.thedigideck.com/images/menu-dock-end.png");
+  background: url("http://nascar.thedigideck.com/organizations/nascar/images/menu-dock-end.png");
 }
 /* line 436, ../scss/main.sass */
 html .popdown-header, html .popdown {
