@@ -1,0 +1,797 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    
+    <!--[if lte IE 8]>
+    <script type="text/javascript">
+        window.ie8 = true;
+    </script>
+    <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+        window.ie = true;
+    </script>
+    <![endif]-->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=1024, initial-scale=0.8, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        NASCAR    </title>
+
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/reset.css?1" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/fonts.css?1" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/main.css?9" type="text/css" media="screen" title="" charset="utf-8">
+        <link rel="apple-touch-icon" href="/appleicons/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/appleicons/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/appleicons/touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/appleicons/touch-icon-ipad-retina.png" />
+    
+    <script type="text/javascript">
+        window.digideck = {
+            'organization': {"id":16,"subdomain":"nascar","name":"NASCAR","updated":1393986106},
+            'presentation': {"id":872,"subdomain":"d","name":"Default","logo-url":"\/image\/5365","logoId":5365,"created":1383530794,"updated":1400710498,"author":"Dan Menssen","color":"#FFFFFF","pdf_status":2,"zip_status":2}
+                        , 'section': {"id":135,"template":"default","shortName":"media","name":"Media Integration"}
+                    };
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/jquery.min.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/jquery.transit.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/events.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/mediaelement/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/bundles/spodigdigideck/mediaelement/mediaelementplayer.css" />
+    <script type="text/javascript">
+    $(document).ready(function() {
+        if((navigator.userAgent.match(/iPad/i))) {
+            $('head').append('<link type="text/css" rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/tablet.css" />');
+            return;
+        }
+        var $t = $(window);
+
+        function adjustStyle(width, height) {
+            width = parseInt(width);
+            height = parseInt(height);
+
+            var $s = $('#size-stylesheet');
+            if ($s.length && (height < 800 || width < 1300)) {
+                return;
+            }
+
+            if (!$s.length && height >= 800 && width >= 1300) {
+                return;
+            }
+
+            if ($s.length && height >= 800 && width >= 1300) {
+                $s.attr('disabled', 'disabled');
+                $s.remove();
+                $('body').removeClass('small-stylesheet');
+                window.deck.trigger('change-stylesheet', 'normal');
+                return;
+            }
+
+            $('body').addClass('small-stylesheet');
+            $('head').append('<link id="size-stylesheet" type="text/css" rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/small.css" />');
+            window.deck.trigger('change-stylesheet', 'small');
+        };
+
+        adjustStyle($t.width(), $t.height());
+        $t.resize(function() {
+            adjustStyle($t.width(), $t.height());
+        });
+    });
+    </script>
+    <script type='text/javascript' src='./css/script.js'></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/krpano/pano.js"></script>
+
+        
+        
+</head>
+
+
+<!--[if lte IE 8]>
+<body class="ie8">
+<![endif]-->
+<!--[if IE 9]>
+<body class="ie9">
+<![endif]-->
+<!--[if gte IE 9 ]><!-->
+<body>
+<!--<![endif]-->
+    <div class='video-menu'>
+    <div class='video-menu-button'>&nbsp;</div>
+    <ul class='video-menu-list'>
+        <div class='video-menu-title'>Video Gallery</div>
+        <li>
+            <a href='javascript:void(0)'>Intro Video</a>
+            <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/intro:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-intro-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </li>
+        <li>
+            <a href='javascript:void(0)'>Brand Film</a>
+            <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/brand-film:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-brand-film-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </li>
+        <li>
+            <a href='javascript:void(0)'>NASCAR Sales</a>
+            <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/nascar_sales:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-nascar_sales-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li>
+                    <a href='javascript:void(0)'>Fully Integrated <span>Marketing Platform</span></a>
+                                                <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/6074:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-6074-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </li>
+                                                                                                                                                                                                                            <li>
+                    <a href='javascript:void(0)'>NASCAR <span>Fuel for Business</span></a>
+                                                <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/6077:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-6077-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </li>
+                                                                                        <li>
+                    <a href='javascript:void(0)'>NASCAR <span>Small Business</span></a>
+                    <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/Small Business:http://nascar.thedigideck.com/organizations/nascar/background-images/small-business.jpg">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-Small Business-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </li>
+                                                                                                                                                                                                                <li>
+                    <a href='javascript:void(0)'>At-Track Hospitality</a>
+                                                <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/6081:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-6081-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </li>
+                                                                                                                                                                                                                            <li>
+                    <a href='javascript:void(0)'>NASCAR <span>Automotive</span></a>
+                                                <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/6085:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-6085-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </li>
+                                                                                                                            <li>
+                    <a href='javascript:void(0)'>NASCAR Performance Partners</a>
+                                                <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/6086:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-6086-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </li>
+                                                                                                                                                                                                                                        <li>
+                    <a href='javascript:void(0)'>NASCAR <span>Contingency Program</span></a>
+                    <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/Contingency Video:http://nascar.thedigideck.com/organizations/nascar/posters/contingency.jpg">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-Contingency Video-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li>
+                    <a href='javascript:void(0)'>NASCAR <span>Green Impact</span></a>
+                    <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/nascar-goes-green:http://nascar.thedigideck.com/organizations/nascar/posters/nascar-goes-green.jpg">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-nascar-goes-green-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </li>
+                                                                            <li>
+                    <a href='javascript:void(0)'>Core Messages and Initiatives</a>
+                    <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/tv-nascar-green-game-changer-refresh:http://nascar.thedigideck.com/organizations/nascar/posters/tv-nascar-green.jpg">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-tv-nascar-green-game-changer-refresh-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li>
+            <a href='javascript:void(0)'>Home Tracks Sales Presentation</a>
+            <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/6092:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-6092-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </li>
+        <li>
+            <a href='javascript:void(0)'>Home Tracks Brand Spot</a>
+            <div class='dsm-popup-video'>
+        <a href='javascript:void(0)' class="toggle-video toggle-video-single">Show Video</a>
+        <div class="video-layer">
+        <div class="popup-screen"></div>
+                <div class='video-container' data-video="cdn:nascar/video/ht:poster">
+                    <div class="close-video"></div>
+            <div style="height: 100%; position: relative; width: 100%">
+                <div id="dsm-popup-video-ht-1" class="video-player">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </li>
+    </ul>
+</div>
+<script type='text/javascript'>
+    $('.video-menu-list>li>a').click(function() {
+        $(this).parent().find('.toggle-video').click();
+    });
+</script>
+
+    <div id="loading-wrap">
+        <div class="loading-bar"><p>Loading...</p></div>
+    </div>
+
+            <div id="wrapper" class="section-name-media section-default menu-horizontal">
+    
+            
+        
+        
+        <div id="menu-wrap" class="horizontal">
+            <div id="content-shadow"></div>
+            <a href="./index.html"><div id="section-menu-btn"></div></a>
+            <div id="next-arrow"></div>
+            <div id="previous-arrow"></div>
+            <div id="end-arrow"></div>
+            <div id="start-arrow"></div>
+            <div id="menu-dock">
+                <div id="menu-dock-list">
+                                                                		<ul class="ul-color1">
+        <div class="category-overlay color1">
+            <div class="category-title-color1">Media Integration</div>
+        </div>
+						<li id="menu-item-6112" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/NASCAR-digital-landing-page2.jpg" />
+                        <p>NASCAR Digital Media</p>
+            </li>
+					<li id="menu-item-6113" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/desktop_3.jpg" />
+                        <p>Desktop</p>
+            </li>
+					<li id="menu-item-6114" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/facebook_2.jpg" />
+                        <p>Social</p>
+            </li>
+					<li id="menu-item-6115" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/mobile_3.jpg" />
+                        <p>Mobile</p>
+            </li>
+					<li id="menu-item-6248" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/customcontent_1.jpg" />
+                        <p>Custom Content Integrations</p>
+            </li>
+					<li id="menu-item-6116" class="menu-item">
+                            <img src="http://nascar.thedigideck.com/organizations/nascar/navigation-images/tv-radio-print-partners.jpg" />
+                        <p>TV, Radio & Print Partners</p>
+            </li>
+			</ul>
+
+                                                                                                            <a class='next-section next-section-name-team' href='/d/team'>Continue to<br /><strong>Team &amp; Driver</strong></a>
+                                    </div>
+            </div>
+        </div>
+    
+        <div class="slide-container-outer-border horizontal">
+        <div class="slide-container-inner-border">
+            <div id="next-slide" class="horizontal"></div>
+            <div id="prev-slide" class="horizontal"></div>
+                                    
+<div data-slide-title="NASCAR&#x20;Digital&#x20;Media" id="slide-222837" class="slide-type-template  slide slide-6112 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/NASCAR-digital-landing-page2.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/NASCAR-digital-landing-page2.jpg" /></div>');
+    });
+</script>
+        </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Desktop" id="slide-222838" class="slide-type-template  slide slide-6113 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/desktop_3.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/desktop_3.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+<strong>Desktop</strong>
+
+
+</h3>
+                <h4>NASCAR.com, Yahoo! NASCAR</h4>
+Consistently ranked in the top 20 among nearly 400 sports sites.
+
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Social" id="slide-222839" class="slide-type-template  slide slide-6114 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+            <div class='dsm-rotator'>
+            <div class='rotator-arrow-previous'>previous</div>
+            <div class='rotator-slides'>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/facebook_2.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/facebook_2.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/twitter.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/twitter.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/instagram.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/instagram.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/youtube.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/youtube.jpg" /></div>');
+    });
+</script>
+                    </div>
+                                    <div class='rotator-slide'>
+                                <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/fantasy.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/fantasy.jpg" /></div>');
+    });
+</script>
+                    </div>
+                            </div>
+            <div class='rotator-arrow-next'>next</div>
+            <div class='rotator-dots'></div>
+        </div>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+<strong>Social</strong>
+
+
+</h3>
+                <h4>NASCAR Official Facebook, Twitter, Google+, Instagram, YouTube, Fantasy</h4>
+<ul>
+<li>4.1MM+ on Facebook</li>
+<li>1.4MM+ on Twitter</li>
+<li>2.2MM+ on Google+</li>
+</ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Mobile" id="slide-222840" class="slide-type-template  slide slide-6115 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/mobile_3.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/mobile_3.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+<strong>Mobile</strong>
+
+
+</h3>
+                <h4>Mobile Web, NASCAR Mobile App, RaceView</h4>
+Over 2 million NASCAR mobile app downloads since February 2013
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="Custom&#x20;Content&#x20;Integrations" id="slide-222857" class="slide-type-template  slide slide-6248 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/customcontent_1.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/customcontent_1.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Custom Content<br /><strong>Integrations</strong>
+
+
+</h3>
+                <p>Examples include:</p>
+<ul>
+<li>Mobil1&mdash;Automotive Technology</li>
+<li>Coca-Cola&mdash;Coke Family of Drivers</li>
+<li>UPS&mdash;Racing Game Changers</li>
+</ul>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+                    
+<div data-slide-title="TV,&#x20;Radio&#x20;&amp;&#x20;Print&#x20;Partners" id="slide-222841" class="slide-type-template  slide slide-6116 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+                    <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="http://nascar.thedigideck.com/organizations/nascar/background-images/tv-radio-print-partners.jpg" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="http://nascar.thedigideck.com/organizations/nascar/background-images/tv-radio-print-partners.jpg" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+TV, Radio &amp; Print<br /><strong>Partners</strong>
+
+
+</h3>
+                NASCAR is the platform for industry-leading media partners.
+<br><br>
+NASCAR fans spend more than seven hours per week following NASCAR via various media channels (i.e. television, computer, newspapers/magazines, radio, smartphone/cell phone, and/or tablet). Among avid NASCAR fans, the average is more than ten hours per week.
+<br><br>
+<em>Source: NASCAR Fan Engagement Tracker, commissioned by NASCAR and conducted by Toluna prior to the 2013 season</em>
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+            
+        </div>
+    </div>
+    
+
+                
+    </div>
+
+    <div id="menu-bg" class="bgimg" style="display: none"></div>
+    <div id="menu-container">
+                
+        <div class='section-menu-sizing-constraint'>
+    <div class='section-menu-positioner'>
+                <div class='section-menu-constraint'>
+            <ul class="section-menu">
+                                <li class="menu-item menu-item-intro">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-intro-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-intro-off.png">
+                    </div>
+                    <a href="/d/intro" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-intro-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-intro-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-power">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-power-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-power-off.png">
+                    </div>
+                    <a href="/d/power" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-power-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-power-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-partnership">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-partnership-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-partnership-off.png">
+                    </div>
+                    <a href="/d/partnership" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-partnership-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-partnership-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-green">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-green-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-green-off.png">
+                    </div>
+                    <a href="/d/green" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-green-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-green-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-media">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-media-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-media-off.png">
+                    </div>
+                    <a href="/d/media" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-media-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-media-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-team">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-team-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-team-off.png">
+                    </div>
+                    <a href="/d/team" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-team-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-team-on.png">
+                    </a>
+                </li>
+                                <li class="menu-item menu-item-track">
+                    <div style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-track-off.jpg')">
+                        <img src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-track-off.png">
+                    </div>
+                    <a href="/d/track" style="background-image: url('http://nascar.thedigideck.com/organizations/nascar/section-menu/image-track-on.jpg')">
+                        <img class="head-on" src="http://nascar.thedigideck.com/organizations/nascar/section-menu/heading-track-on.png">
+                    </a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+
+        <script type='text/javascript'>
+        (function() {
+            $('img').load(function() {
+                $(this).data('loaded', true);
+            });
+            $(window).load(function() {
+                window.loaded = true;
+            });
+        })();
+    </script>
+
+    <script type="text/javascript" src="http://nascar.thedigideck.com/organizations/nascar/jwplayer/jwplayer.js"  charset="utf-8"></script>
+
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/main.js?8" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
