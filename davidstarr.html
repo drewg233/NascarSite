@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    
+    <!--[if lte IE 8]>
+    <script type="text/javascript">
+        window.ie8 = true;
+    </script>
+    <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+        window.ie = true;
+    </script>
+    <![endif]-->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=1024, initial-scale=0.8, user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>
+        NASCAR    </title>
+
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/reset.css?1" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/fonts.css?1" type="text/css" media="screen" title="" charset="utf-8">
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" title="" charset="utf-8">
+        <link rel="apple-touch-icon" href="/appleicons/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/appleicons/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/appleicons/touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/appleicons/touch-icon-ipad-retina.png" />
+    
+    <script type="text/javascript">
+        window.digideck = {
+            'organization': {"id":16,"subdomain":"nascar","name":"NASCAR","updated":1393986106},
+            'presentation': {"id":872,"subdomain":"d","name":"Default","logo-url":"\/image\/5365","logoId":5365,"created":1383530794,"updated":1400710498,"author":"Dan Menssen","color":"#FFFFFF","pdf_status":2,"zip_status":2}
+                        , 'section': {"id":134,"template":"default","shortName":"green","name":"NASCAR Green"}
+                    };
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/jquery.min.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/jquery.transit.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/events.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/mediaelement/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="http://nascar.thedigideck.com/bundles/spodigdigideck/mediaelement/mediaelementplayer.css" />
+    <script type="text/javascript">
+    $(document).ready(function() {
+        if((navigator.userAgent.match(/iPad/i))) {
+            $('head').append('<link type="text/css" rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/tablet.css" />');
+            return;
+        }
+        var $t = $(window);
+
+        function adjustStyle(width, height) {
+            width = parseInt(width);
+            height = parseInt(height);
+
+            var $s = $('#size-stylesheet');
+            if ($s.length && (height < 800 || width < 1300)) {
+                return;
+            }
+
+            if (!$s.length && height >= 800 && width >= 1300) {
+                return;
+            }
+
+            if ($s.length && height >= 800 && width >= 1300) {
+                $s.attr('disabled', 'disabled');
+                $s.remove();
+                $('body').removeClass('small-stylesheet');
+                window.deck.trigger('change-stylesheet', 'normal');
+                return;
+            }
+
+            $('body').addClass('small-stylesheet');
+            $('head').append('<link id="size-stylesheet" type="text/css" rel="stylesheet" href="http://nascar.thedigideck.com/organizations/nascar/css/small.css" />');
+            window.deck.trigger('change-stylesheet', 'small');
+        };
+
+        adjustStyle($t.width(), $t.height());
+        $t.resize(function() {
+            adjustStyle($t.width(), $t.height());
+        });
+    });
+    </script>
+    <script type='text/javascript' src='./css/script.js'></script>
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/krpano/pano.js"></script>
+
+        
+        
+</head>
+
+
+<!--[if lte IE 8]>
+<body class="ie8">
+<![endif]-->
+<!--[if IE 9]>
+<body class="ie9">
+<![endif]-->
+<!--[if gte IE 9 ]><!-->
+<body>
+<!--<![endif]-->
+
+<script type='text/javascript'>
+    $('.video-menu-list>li>a').click(function() {
+        $(this).parent().find('.toggle-video').click();
+    });
+</script>
+
+    <div id="loading-wrap">
+        <div class="loading-bar"><p>Loading...</p></div>
+    </div>
+
+            <div id="wrapper" class="section-name-power section-default menu-horizontal">
+    
+            
+        
+        
+        <div id="menu-wrap" class="horizontal">
+            <div id="content-shadow"></div>
+            <div id="section-menu-btn"></div>
+            <div id="next-arrow"></div>
+            <div id="previous-arrow"></div>
+            <div id="end-arrow"></div>
+            <div id="start-arrow"></div>
+            <div id="menu-dock">
+                <div id="menu-dock-list">
+           <ul class="ul-color1">
+           	<!-- Menu Item 1 -->
+						<li id="menu-item-6100" class="menu-item">
+                            <img src="./images/davidstarr.jpeg" />
+                        <p>David Starr</p>
+            </li>
+            <!-- Menu Item 2 -->
+					<li id="menu-item-6101" class="menu-item">
+                            <img src="./images/davidstarr2.jpeg" />
+                        <p>David Starr Facts</p>
+            </li>
+			</ul>
+
+            </div>
+            </div>
+        </div>
+    
+    	<!-- Start of First Slide -->
+        <div class="slide-container-outer-border horizontal">
+        <div class="slide-container-inner-border">
+            <div id="next-slide" class="horizontal"></div>
+            <div id="prev-slide" class="horizontal"></div>
+                                    
+<div data-slide-title="NASCAR&#x20;Green&#x20;Impact" id="slide-222825" class="slide-type-template  slide slide-6100 ">
+
+
+    <div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+            <div class="dsm-video">
+    <div class="video-container" data-video="local:videos/davidstarrpage">
+        <div style="height: 100%; position: relative; width: 100%">
+            <div id="dsm-video-6100-0" class="video-player">
+                            </div>
+        </div>
+    </div>
+</div>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+NASCAR <br /><strong>David Starr</strong>
+
+</h3>
+                Starr began by being on a neighbor's pit crew at the age of 14. At the age of 16, he started driving in street stock racing, winning the championship at Big H Motor Speedway in his first year racing. Over the next seven years, Starr won a total of 20 late model races.
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+<!-- End of first slide -->
+
+
+<!-- Start of Second Slide -->
+<div data-slide-title="Core&#x20;Messages&#x20;and&#x20;Initiatives" id="slide-222826" class="slide-type-template  slide slide-6101 ">
+
+
+<div class='slide-outer-border'>
+    <div class='slide-inner-border'>
+        <div class='column-block'>
+
+
+        
+             <div class='fit-container-border'>
+            <div class='fit-container'>
+            <img class="fitbg" src="./images/DavidStarrPage.png" />
+            <div class='match-image'></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('body').append('<div class="preload-container" style="overflow: hidden; height: 0; width: 0; position: absolute;"><img src="./images/DavidStarrPage.png" /></div>');
+    });
+</script>
+    </div>
+<div class="left-column">
+	<div class="center-vertical">
+                <h3>
+
+Core Messages and<br /><strong>Initiatives</strong>
+
+
+</h3>
+         
+                
+	</div>
+</div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+<!-- End of Second slide -->
+                                
+
+            
+        </div>
+    </div>
+    
+
+                
+    </div>
+
+    <div id="menu-bg" class="bgimg" style="display: none"></div>
+    <div id="menu-container">
+      <div class='section-menu-sizing-constraint'>
+        <div class='section-menu-positioner'>
+          <div class='section-menu-constraint'>
+            <ul class="section-menu">
+
+              <!-- Intro Video -->
+              <li class="menu-item menu-item-intro">
+                <div style="background-image: url('./images/image-intro-off.jpg')">
+                  <img src="./images/heading-intro-off.png">
+                </div>
+                <a href="./index.html" style="background-image: url('./images/image-intro-on.jpg')">
+                  <img class="head-on" src="./images/heading-intro-on.png">
+                </a>
+              </li>
+
+              <!-- Power of Nascar -->
+              <li class="menu-item menu-item-power">
+                <div style="background-image: url('./images/image-power-off.jpg')">
+                  <img src="./images/heading-power-off.png">
+                </div>
+                <a href="./power.html" style="background-image: url('./images/image-power-on.jpg')">
+                  <img class="head-on" src="./images/heading-power-on.png">
+                </a>
+              </li>
+
+              <!-- Nascar Partnership -->
+              <li class="menu-item menu-item-partnership">
+                <div style="background-image: url('./images/image-partnership-off.jpg')">
+                  <img src="./images/heading-partnership-off.png">
+                </div>
+                <a href="./partnership.html" style="background-image: url('./images/image-partnership-on.jpg')">
+                  <img class="head-on" src="./images/heading-partnership-on.png">
+                </a>
+              </li>
+
+              <!-- Nascar Green -->
+              <li class="menu-item menu-item-green">
+                <div style="background-image: url('./images/image-green-off.jpg')">
+                  <img src="./images/heading-green-off.png">
+                </div>
+                <a href="./green.html" style="background-image: url('./images/image-green-off.jpg')">
+                  <img class="head-on" src="./images/heading-green-on.png">
+                </a>
+              </li>
+
+              <!-- Media Integration -->
+              <li class="menu-item menu-item-media">
+                <div style="background-image: url('./images/image-media-off.jpg')">
+                  <img src="./images/heading-media-off.png">
+                </div>
+                <a href="./media.html" style="background-image: url('./images/image-media-off.jpg')">
+                  <img class="head-on" src="./images/heading-media-on.png">
+                </a>
+              </li>
+
+              <!-- Why They Invest -->
+              <li class="menu-item menu-item-team">
+                <div style="background-image: url('./images/image-team-off.jpg')">
+                  <img src="./images/heading-invest-off.png">
+                </div>
+                <a href="./invest.html" style="background-image: url('./images/image-team-off.jpg')">
+                  <img class="head-on" src="./images/heading-invest-on.png">
+                </a>
+              </li>
+
+              <!-- Track And Facilities -->
+              <li class="menu-item menu-item-track">
+                <div style="background-image: url('./images/image-track-off.jpg')">
+                  <img src="./images/heading-track-off.png">
+                </div>
+                <a href="./davidstarr.html" style="background-image: url('./images/image-track-off.jpg')">
+                  <img class="head-on" src="./images/heading-track-on.png">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footertext">
+        David Starr Racing
+      </div>
+    </div>
+
+        <script type='text/javascript'>
+        (function() {
+            $('img').load(function() {
+                $(this).data('loaded', true);
+            });
+            $(window).load(function() {
+                window.loaded = true;
+            });
+        })();
+    </script>
+
+    <script type="text/javascript" src="http://nascar.thedigideck.com/organizations/nascar/jwplayer/jwplayer.js"  charset="utf-8"></script>
+
+    <script src="http://nascar.thedigideck.com/bundles/spodigdigideck/presentation/js/main.js?8" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
